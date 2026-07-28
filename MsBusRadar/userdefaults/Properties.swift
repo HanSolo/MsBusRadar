@@ -11,11 +11,13 @@ import MapKit
 
 
 extension Key {
-    static let showStops         : Key = "showStops"
-    static let favoriteLines     : Key = "favoriteLines"
-    static let showFavoriteLines : Key = "showFavoriteLines"
-    static let favoriteStops     : Key = "favoriteStops"
-    static let showFavoriteStops : Key = "showFavoriteStops"
+    static let showStops             : Key = "showStops"
+    static let favoriteLines         : Key = "favoriteLines"
+    static let showFavoriteLines     : Key = "showFavoriteLines"
+    static let favoriteStops         : Key = "favoriteStops"
+    static let showFavoriteStops     : Key = "showFavoriteStops"
+    static let showParkingGarages    : Key = "showParkingGarages"
+    static let showConstructionSites : Key = "showConstructionSites"
 }
 
 
@@ -39,6 +41,12 @@ public struct Properties {
     
     @UserDefault(key: .showFavoriteStops, defaultValue: false)
     var showFavoriteStops: Bool?
+    
+    @UserDefault(key: .showParkingGarages, defaultValue: false)
+    var showParkingGarages: Bool?
+    
+    @UserDefault(key: .showConstructionSites, defaultValue: false)
+    var showConstructionSites: Bool?
     
     private init() {}
 }

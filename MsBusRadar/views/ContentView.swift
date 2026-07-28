@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var region            : MKCoordinateRegion = MKCoordinateRegion(center: Constants.MAP_CENTER, span: Constants.MAP_SPAN)
     @State private var bounds            : MapCameraBounds    = MapCameraBounds(centerCoordinateBounds: MKCoordinateRegion(center: Constants.MAP_CENTER, span: Constants.MAP_SPAN), minimumDistance: 100, maximumDistance: 35000)
     @State private var showLineSelection : Bool               = false
-    @State private var showStopInfo      : Bool               = false    
+    @State private var showStopInfo      : Bool               = false
     
     
     var body: some View {
@@ -36,38 +36,53 @@ struct ContentView: View {
                         
                         HStack {
                             Button {
-                                self.model.selectedStop          = Constants.DEFAULT_STOP
-                                self.model.selectedBus           = Constants.DEFAULT_BUS
-                                self.model.selectedParkingGarage = Constants.DEFAULT_PARKING_GARAGE
+                                self.model.selectedStop             = Constants.DEFAULT_STOP
+                                self.model.selectedBus              = Constants.DEFAULT_BUS
+                                self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
                                 self.model.stopsOfSelectedLine.removeAll()
                             } label: {
                                 Text("Selektion aufheben")
                                     .font(Constants.INFO_FONT)
                                     .foregroundStyle(colorScheme == .dark ? .white : Constants.DARK_BLUE)
+                                    .frame(height: 22)
+                            }
+                            .buttonStyle(.glass)
+                                                                                    
+                            Spacer()
+                                    
+                            Button {
+                                self.model.showParkingGarages.toggle()
+                            } label: {
+                                ZStack(alignment: .top) {
+                                    if self.model.showParkingGarages {
+                                        Color.white
+                                            .frame(width: 20, height: 20)
+                                            .cornerRadius(10)
+                                    } else {
+                                        Color.black
+                                            .frame(width: 22, height: 22)
+                                            .cornerRadius(10)
+                                    }
+                                    Image(systemName: "parkingsign.square.fill")
+                                        .resizable()
+                                        .frame(width: 20, height: 20)
+                                        .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                        .foregroundStyle(self.model.showParkingGarages ? Constants.PARK_BLUE : Color.white)
+                                }
                             }
                             .buttonStyle(.glass)
                             
-                            if !self.model.networkMonitor.isConnected {
-                                Spacer()
-                                Text("OFFLINE")
-                                    .font(.system(size: 8))
-                                    .padding(EdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5))
-                                    .foregroundStyle(.white)
-                                    .background(
-                                        ZStack {
-                                            RoundedRectangle(
-                                                cornerRadius: 5,
-                                                style       : .continuous
-                                            )
-                                            .fill(.red)
-                                            RoundedRectangle(
-                                                cornerRadius: 5,
-                                                style       : .continuous
-                                            )
-                                            .stroke(.red, lineWidth: 1)
-                                        }
-                                    )
+                            Spacer()
+                            
+                            Button {
+                                self.model.showConstructionSites.toggle()
+                            } label: {
+                                Image(self.model.showConstructionSites ? "ConstructionSite" : "ConstructionSiteOff")
+                                    .resizable()
+                                    .frame(width: 22, height: 22)
                             }
+                            .buttonStyle(.glass)
                             
                             Spacer()
                             
@@ -77,12 +92,34 @@ struct ContentView: View {
                                 Image(systemName: "scope")
                                     .font(Constants.INFO_FONT)
                                     .foregroundStyle(colorScheme == .dark ? .white : Constants.DARK_BLUE)
+                                    .frame(width: 22, height: 22)
                             }
                             .buttonStyle(.glass)
                         }
                         .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
                                                 
                         Map(position: self.$position, bounds: self.bounds, interactionModes: [.pan, .zoom]) {
+                            // Draw construction sites
+                            if self.model.showConstructionSites {
+                                ForEach(self.model.polylineItems) { item in
+                                    MapPolyline(coordinates: item.coords, contourStyle: .geodesic)
+                                        .stroke(item.color, lineWidth: 5)
+                                        .mapOverlayLevel(level: .aboveRoads)
+                                    Annotation("", coordinate: item.coords.first!) {
+                                        ZStack {
+                                            Image("ConstructionSite")
+                                                .resizable()
+                                                .frame(width: 22, height: 22)
+                                                .onTapGesture {
+                                                    self.model.selectedBus              = Constants.DEFAULT_BUS
+                                                    self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                                    self.model.selectedConstructionItem = item
+                                                }
+                                        }
+                                    }
+                                }
+                            }
+                            
                             // Draw stops
                             if self.model.showStops {
                                 if self.model.stopsOfSelectedLine.isEmpty {
@@ -193,8 +230,9 @@ struct ContentView: View {
                                                 .offset(y: 22)
                                         }                                                                               
                                         .onTapGesture {
-                                            self.model.selectedParkingGarage = Constants.DEFAULT_PARKING_GARAGE
-                                            self.model.selectedBus           = bus
+                                            self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
+                                            self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                            self.model.selectedBus              = bus
                                             self.model.stopsOfSelectedLine.removeAll()
                                             self.model.stopsOfSelectedLine += self.model.stops.filter({ $0.lines.contains(self.model.selectedBus.line) })
                                             self.model.showBusInfo = true
@@ -205,38 +243,41 @@ struct ContentView: View {
                             }
                             
                             // Draw parking garages
-                            ForEach(self.model.parkingGarages) { garage in
-                                Annotation("", coordinate: garage.coordinate) {
-                                    ZStack(alignment: .top) {
-                                        if garage == self.model.selectedParkingGarage {
-                                            Constants.SELECTION_COLOR
-                                                .frame(width: 22, height: 22)
-                                                .cornerRadius(10)
-                                        } else {
-                                            Color.white
-                                                .frame(width: 22, height: 22)
-                                                .cornerRadius(10)
-                                        }
-                                        Image(systemName: "parkingsign.square.fill")
-                                            .resizable()
-                                            .frame(width: 22, height: 22)
-                                            .shadow(color: .clear, radius: 0, x: 0, y: 0)
-                                            .foregroundStyle(Constants.PARK_BLUE)
-                                        Text(garage.name)
-                                            .font(Constants.BUS_FONT)
-                                            .padding(4)
-                                            .cornerRadius(4)
-                                            .offset(y: 20)
-                                    }
-                                    .onTapGesture {
-                                        Task {
-                                            if self.model.networkMonitor.isConnected {
-                                                self.model.parkingGarages.removeAll()
-                                                self.model.parkingGarages += await RestController.getGarageGarages()
+                            if self.model.showParkingGarages {
+                                ForEach(self.model.parkingGarages) { garage in
+                                    Annotation("", coordinate: garage.coordinate) {
+                                        ZStack(alignment: .top) {
+                                            if garage == self.model.selectedParkingGarage {
+                                                Constants.SELECTION_COLOR
+                                                    .frame(width: 22, height: 22)
+                                                    .cornerRadius(10)
+                                            } else {
+                                                Color.white
+                                                    .frame(width: 22, height: 22)
+                                                    .cornerRadius(10)
                                             }
-                                        }                                        
-                                        self.model.selectedBus           = Constants.DEFAULT_BUS
-                                        self.model.selectedParkingGarage = garage
+                                            Image(systemName: "parkingsign.square.fill")
+                                                .resizable()
+                                                .frame(width: 22, height: 22)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(Constants.PARK_BLUE)
+                                            Text(garage.name)
+                                                .font(Constants.BUS_FONT)
+                                                .padding(4)
+                                                .cornerRadius(4)
+                                                .offset(y: 20)
+                                        }
+                                        .onTapGesture {
+                                            Task {
+                                                if self.model.networkMonitor.isConnected {
+                                                    self.model.parkingGarages.removeAll()
+                                                    self.model.parkingGarages += await RestController.getGarageGarages()
+                                                }
+                                            }
+                                            self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
+                                            self.model.selectedBus              = Constants.DEFAULT_BUS
+                                            self.model.selectedParkingGarage    = garage
+                                        }
                                     }
                                 }
                             }
@@ -375,7 +416,7 @@ struct ContentView: View {
                             UserAnnotation()
                         }
                         .mapStyle(.standard(pointsOfInterest: .including([.publicTransport]), showsTraffic: true))
-                        .frame(height: geo.size.height * 0.68)
+                        .frame(height: geo.size.height * 0.66)
                         .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                         .cornerRadius(10)
                         .onMapCameraChange { mapCameraUpdateContext in
@@ -475,6 +516,63 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .background(Constants.DARK_BLUE.opacity(0.5))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
+                        } else if self.model.selectedConstructionItem.name != "none" {
+                            VStack(spacing: 4) {
+                                HStack {
+                                    Spacer()
+                                    
+                                    Image("ConstructionSite")
+                                        .resizable()
+                                        .frame(width: 24, height: 24)
+                                    Text("\(self.model.selectedConstructionItem.name)")
+                                        .font(Constants.LINE_NR_FONT)
+                                        .foregroundStyle(.white)
+                                    
+                                    Spacer()
+                                }
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                
+                                if !self.model.selectedConstructionItem.type.isEmpty {
+                                    Text("\(self.model.selectedConstructionItem.type)")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                }
+                                
+                                Text("vom \(Constants.DATE_FORMATTER.string(from: self.model.selectedConstructionItem.start))")
+                                    .font(Constants.BUS_INFO_FONT)
+                                    .foregroundStyle(.white)
+                                
+                                Text("bis \(Constants.DATE_FORMATTER.string(from: self.model.selectedConstructionItem.end))")
+                                    .font(Constants.BUS_INFO_FONT)
+                                    .foregroundStyle(.white)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
+                            .cornerRadius(10)
+                            .background(Constants.DARK_BLUE.opacity(0.5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))                            
+                        }
+                        
+                        if !self.model.networkMonitor.isConnected {
+                            Spacer()
+                            Text("OFFLINE")
+                                .font(.system(size: 8))
+                                .padding(EdgeInsets(top: 2, leading: 5, bottom: 2, trailing: 5))
+                                .foregroundStyle(.white)
+                                .background(
+                                    ZStack {
+                                        RoundedRectangle(
+                                            cornerRadius: 5,
+                                            style       : .continuous
+                                        )
+                                        .fill(.red)
+                                        RoundedRectangle(
+                                            cornerRadius: 5,
+                                            style       : .continuous
+                                        )
+                                        .stroke(.red, lineWidth: 1)
+                                    }
+                                )
                         }
                         
                         Spacer()
@@ -612,6 +710,9 @@ struct ContentView: View {
                 
                 self.model.parkingGarages.removeAll()
                 self.model.parkingGarages += await RestController.getGarageGarages()
+                
+                self.model.constructionSites.removeAll()
+                self.model.constructionSites += await RestController.getConstructionSites()
             }
         }
         .onReceive(timer) {_ in 

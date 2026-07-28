@@ -17,7 +17,7 @@ struct MsBusRadarApp: App {
             self.model.stopLines = try StopLinesFileParser.loadFromBundle()
         } catch {
             debugPrint("Error reading stop lines text file: \(error)")
-        }               
+        }                
     }
     
     var body: some Scene {

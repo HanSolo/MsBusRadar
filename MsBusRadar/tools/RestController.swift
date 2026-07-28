@@ -120,4 +120,54 @@ class RestController {
             return station
         }
     }
+    
+    public static func getConstructionSites() async -> [ConstructionSite] {
+        let url: URL = URL(string: "\(Constants.CONSTRUCTION_SITE_URL)")!
+        var constructionSites : [ConstructionSite] = []
+                        
+        do {
+            let (data, response) = try await session.data(from: url)
+            guard let http = response as? HTTPURLResponse, http.statusCode == 200 else { return [] }
+            let sites : ConstructionSites = try JSONDecoder().decode(ConstructionSites.self, from: data)
+            if sites.features != nil {
+                sites.features!.forEach { feature in
+                    let name   : String       = feature.properties!.bezeichnung ?? ""
+                    let start  : Date         = Constants.CONSTRUCTION_SITE_DTF.date(from: feature.properties!.beginntam ?? "") ?? Date()
+                    let end    : Date         = Constants.CONSTRUCTION_SITE_DTF.date(from: feature.properties!.endetam   ?? "") ?? Date()
+                    let color  : Color        = feature.properties!.typId == 1 ? .red : .blue
+                    let type   : String
+                    if feature.properties!.typId == 1 {
+                        type = "Vollsperrung"
+                    } else if feature.properties!.typId == 2 {
+                        type = "Teilsperrung"
+                    } else {
+                        type = ""
+                    }
+                    var coords : [[CLLocationCoordinate2D]] = []
+                    switch feature.geometry!.type! {
+                        case "LineString"      :
+                            var coordinates: [CLLocationCoordinate2D] = []
+                            feature.geometry?.line?.forEach { coords in
+                                coordinates.append(CLLocationCoordinate2D(latitude: coords.last!, longitude: coords.first!))
+                            }
+                            coords.append(coordinates)
+                        case "MultiLineString" :
+                            feature.geometry?.multiLine?.forEach { coordArray in
+                                var coordinates: [CLLocationCoordinate2D] = []
+                                coordArray.forEach { coords in
+                                    coordinates.append(CLLocationCoordinate2D(latitude: coords.last!, longitude: coords.first!))
+                                }
+                                coords.append(coordinates)
+                            }
+                        default: break
+                    }
+                    let constructionSite : ConstructionSite = ConstructionSite(name: name, type: type, start: start, end: end, color: color, coords: coords)
+                    constructionSites.append(constructionSite)
+                }
+            }
+            return constructionSites
+        } catch {
+            return constructionSites
+        }
+    }
 }

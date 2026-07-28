@@ -13,10 +13,10 @@ import MapKit
 
 @MainActor @Observable
 public class MsBusRadarModel : NSObject, CLLocationManagerDelegate {
-    var locationManager            : CLLocationManager?
-    var mapRegion                  : MKCoordinateRegion?
-    var networkMonitor             : NetworkMonitor         = NetworkMonitor()
-    var busses                     : [Bus]                  = [] {
+    var locationManager              : CLLocationManager?
+    var mapRegion                    : MKCoordinateRegion?
+    var networkMonitor               : NetworkMonitor         = NetworkMonitor()
+    var busses                       : [Bus]                  = [] {
         didSet {
             if self.selectedBus.id == "none" { return }
             if let bus = self.busses.filter({ $0.id == self.selectedBus.id }).first {
@@ -28,22 +28,33 @@ public class MsBusRadarModel : NSObject, CLLocationManagerDelegate {
             }
         }
     }
-    var stops                      : [Stop]                 = []
-    var favoriteLines              : [String]               = Properties.instance.favoriteLines!.components(separatedBy: ",") {
+    var stops                        : [Stop]                 = []
+    var favoriteLines                : [String]               = Properties.instance.favoriteLines!.components(separatedBy: ",") {
         didSet {
             Properties.instance.favoriteLines = self.favoriteLines.joined(separator: ",")
         }
     }
-    var favoriteStops              : [String]               = Properties.instance.favoriteStops!.components(separatedBy: ",") {
+    var favoriteStops                : [String]               = Properties.instance.favoriteStops!.components(separatedBy: ",") {
         didSet {
             Properties.instance.favoriteStops = self.favoriteStops.joined(separator: ",")
         }
     }
-    var selectedStops              : [Stop]                 = []
-    var stopLines                  : [String: [String]]     = [:]
-    var stopsOfSelectedLine        : [Stop]                 = []
-    var parkingGarages             : [ParkingGarage]        = []
-    var showStops                  : Bool                   = Properties.instance.showStops! {
+    var selectedStops                : [Stop]                 = []
+    var stopLines                    : [String: [String]]     = [:]
+    var stopsOfSelectedLine          : [Stop]                 = []
+    var parkingGarages               : [ParkingGarage]        = []
+    var constructionSites            : [ConstructionSite]     = [] {
+        didSet {
+            self.polylineItems.removeAll()
+            self.polylineItems += self.constructionSites.flatMap { site in
+                site.coords.map {
+                    PolylineItem(name: site.name, type: site.type, start: site.start, end: site.end, coords: $0, color: site.color)
+                }
+            }
+        }
+    }
+    var polylineItems                : [PolylineItem]         = []
+    var showStops                    : Bool                   = Properties.instance.showStops! {
         didSet {
             Properties.instance.showStops = self.showStops
             if self.showStops {
@@ -62,18 +73,12 @@ public class MsBusRadarModel : NSObject, CLLocationManagerDelegate {
             }
         }
     }
-    var showStopsBinding           : Binding<Bool> {
-        Binding(get: { self.showStops}, set: { self.showStops = $0 })
-    }
-    var showFavoriteLines          : Bool                   = Properties.instance.showFavoriteLines! {
+    var showFavoriteLines            : Bool                   = Properties.instance.showFavoriteLines! {
         didSet {
             Properties.instance.showFavoriteLines = self.showFavoriteLines
         }
     }
-    var showFavoriteLinesBinding   : Binding<Bool> {
-        Binding(get: { self.showFavoriteLines}, set: { self.showFavoriteLines = $0 })
-    }
-    var showFavoriteStops          : Bool                   = Properties.instance.showFavoriteStops! {
+    var showFavoriteStops            : Bool                   = Properties.instance.showFavoriteStops! {
         didSet {
             Properties.instance.showFavoriteStops = self.showFavoriteStops
             self.selectedStops.removeAll()
@@ -91,28 +96,36 @@ public class MsBusRadarModel : NSObject, CLLocationManagerDelegate {
                 self.selectedStops += self.stops
             }
         }
-    }
-    var showFavoriteStopsBinding   : Binding<Bool> {
-        Binding(get: { self.showFavoriteStops}, set: { self.showFavoriteStops = $0 })
-    }
-    var showBusInfo                : Bool                   = false
-    var showStationData            : Bool                   = false
-    var showStationDataBinding     : Binding<Bool> {
+    }    
+    var showBusInfo                  : Bool                   = false
+    var showStationData              : Bool                   = false
+    var showStationDataBinding       : Binding<Bool> {
         Binding(get: { self.showStationData}, set: { self.showStationData = $0 })
     }
-    var selectedStop               : Stop                   = Constants.DEFAULT_STOP
-    var selectedBus                : Bus                    = Constants.DEFAULT_BUS {
+    var showParkingGarages           : Bool                   = Properties.instance.showParkingGarages! {
+        didSet {
+            Properties.instance.showParkingGarages = self.showParkingGarages
+        }
+    }
+    var showConstructionSites        : Bool                   = Properties.instance.showConstructionSites! {
+        didSet {
+            Properties.instance.showConstructionSites = self.showConstructionSites
+        }
+    }
+    var selectedStop                 : Stop                   = Constants.DEFAULT_STOP
+    var selectedBus                  : Bus                    = Constants.DEFAULT_BUS {
         didSet {
             if self.selectedBus.id == "none" { return }            
             self.nextStop = self.stops.first(where: { $0.id.starts(with: self.selectedBus.nextStopId) }) ?? Constants.DEFAULT_STOP
         }
     }
-    var selectedBusLastUpdate      : String                 = ""
-    var selectedBusLocation        : CLLocationCoordinate2D = Constants.MAP_CENTER
-    var selectedParkingGarage      : ParkingGarage          = Constants.DEFAULT_PARKING_GARAGE
-    var selectedTrainstation       : String                 = ""
-    var nextStop                   : Stop                   = Constants.DEFAULT_STOP
-    var currentMapSpan             : MKCoordinateSpan       = Constants.MAP_SPAN
+    var selectedBusLastUpdate        : String                 = ""
+    var selectedBusLocation          : CLLocationCoordinate2D = Constants.MAP_CENTER
+    var selectedParkingGarage        : ParkingGarage          = Constants.DEFAULT_PARKING_GARAGE
+    var selectedTrainstation         : String                 = ""
+    var selectedConstructionItem     : PolylineItem           = Constants.DEFAULT_CONSTRUCTION_ITEM
+    var nextStop                     : Stop                   = Constants.DEFAULT_STOP
+    var currentMapSpan               : MKCoordinateSpan       = Constants.MAP_SPAN
     
         
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
