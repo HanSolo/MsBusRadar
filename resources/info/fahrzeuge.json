@@ -1,0 +1,3854 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "1",
+        "akthst": "43415",
+        "delay": 536,
+        "nachhst": "43421",
+        "richtungstext": "Coerde",
+        "starthst": "47470",
+        "betriebstag": "2026-07-17",
+        "sequenz": 24,
+        "linientext": "8",
+        "fahrzeugid": "2178",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100161_6_8_28",
+        "abfahrtstart": "1784277960",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281440",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6373186,
+          51.9507658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "33",
+        "richtungsid": "1",
+        "akthst": "41411",
+        "delay": 252,
+        "nachhst": "43432",
+        "richtungstext": "Hafenstraße",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 23,
+        "linientext": "33",
+        "fahrzeugid": "1865",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100139_3_33_80",
+        "abfahrtstart": "1784276400",
+        "visfahrplanlagezst": 1784279261,
+        "ankunftziel": "1784279040",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6276611,
+          51.9551294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "46931",
+        "delay": 211,
+        "nachhst": "46930",
+        "richtungstext": "Nienberge Hannaschweg",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 52,
+        "linientext": "5",
+        "fahrzeugid": "5471",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100081_5_5_425",
+        "abfahrtstart": "1784274180",
+        "visfahrplanlagezst": 1784279005,
+        "ankunftziel": "1784278800",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5420989,
+          52.0032742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "1",
+        "akthst": "47470",
+        "delay": 0,
+        "nachhst": "47475",
+        "richtungstext": "Coerde",
+        "starthst": "47470",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "8",
+        "fahrzeugid": "2077",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100148_8_8_27",
+        "abfahrtstart": "1784280360",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784283840",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7163136,
+          51.9106208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "34",
+        "richtungsid": "1",
+        "akthst": "41201",
+        "delay": 258,
+        "nachhst": "41161",
+        "richtungstext": "Ringlinie",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 16,
+        "linientext": "34",
+        "fahrzeugid": "5621",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100098_8_34_566",
+        "abfahrtstart": "1784278200",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784280720",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6343425,
+          51.9727719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "1",
+        "akthst": "43730",
+        "delay": 0,
+        "nachhst": "43721",
+        "richtungstext": "Kinderhaus Schulzentrum",
+        "starthst": "43730",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "17",
+        "fahrzeugid": "2377",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100172_8_17_64",
+        "abfahrtstart": "1784280240",
+        "visfahrplanlagezst": 1784280021,
+        "ankunftziel": "1784283480",
+        "zielhst": "4585001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6580711,
+          51.9242314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "1",
+        "akthst": "41000",
+        "delay": -14,
+        "nachhst": "41051",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "15",
+        "fahrzeugid": "5457",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100050_6_15_430",
+        "abfahrtstart": "1784277780",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784281980",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.63452,
+          51.9571758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "2",
+        "akthst": "42261",
+        "delay": 55,
+        "nachhst": "42271",
+        "richtungstext": "Alte Sternwarte",
+        "starthst": "4247001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 2,
+        "linientext": "2",
+        "fahrzeugid": "5479",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100181_7_2_423",
+        "abfahrtstart": "1784279940",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784283600",
+        "zielhst": "45385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7164881,
+          51.9993969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "1",
+        "akthst": "46350",
+        "delay": 0,
+        "nachhst": "46355",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "15",
+        "fahrzeugid": "2357",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100048_6_15_55",
+        "abfahrtstart": "1784280180",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784284380",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5273717,
+          51.9146367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "2",
+        "akthst": "41000",
+        "delay": 169,
+        "nachhst": "41021",
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 23,
+        "linientext": "15",
+        "fahrzeugid": "5579",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100053_5_15_487",
+        "abfahrtstart": "1784277840",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784281920",
+        "zielhst": "46350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6294542,
+          51.9562494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "2",
+        "akthst": "45961",
+        "delay": 93,
+        "nachhst": "45500",
+        "richtungstext": "Mecklenbeck Meckmannweg",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 5,
+        "linientext": "16",
+        "fahrzeugid": "2354",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100044_6_16_60",
+        "abfahrtstart": "1784279700",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784283060",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6008083,
+          51.9960028
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "2",
+        "akthst": "47351",
+        "delay": 44,
+        "nachhst": "47341",
+        "richtungstext": "Wolbeck Nogatstraße",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 40,
+        "linientext": "8",
+        "fahrzeugid": "2272",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100102_5_8_31",
+        "abfahrtstart": "1784276760",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784280420",
+        "zielhst": "47470"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.703715,
+          51.9193222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "4666002",
+        "delay": 36,
+        "nachhst": "46671",
+        "richtungstext": "Amelsbüren",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "1",
+        "fahrzeugid": "5581",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100155_5_1_488",
+        "abfahrtstart": "1784279940",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784284860",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5302297,
+          51.9537783
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "42285",
+        "delay": 298,
+        "nachhst": "42281",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44940",
+        "betriebstag": "2026-07-17",
+        "sequenz": 42,
+        "linientext": "10",
+        "fahrzeugid": "5586",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100027_5_10_495",
+        "abfahrtstart": "1784276160",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784280000",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7108044,
+          51.9967122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "108",
+        "richtungsid": "1",
+        "akthst": "41421",
+        "delay": 269,
+        "nachhst": "41401",
+        "richtungstext": "Coerde",
+        "starthst": "46601",
+        "betriebstag": "2026-07-17",
+        "sequenz": 11,
+        "linientext": "E8",
+        "fahrzeugid": "2358",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100112_2_108_109",
+        "abfahrtstart": "1784294700",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784297040",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6195306,
+          51.9558653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "110",
+        "richtungsid": "1",
+        "akthst": "4498101",
+        "delay": 30,
+        "nachhst": "44121",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 17,
+        "linientext": "E10",
+        "fahrzeugid": "2352",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100093_2_110_116",
+        "abfahrtstart": "1784288400",
+        "visfahrplanlagezst": 1784280051,
+        "ankunftziel": "1784291220",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5728964,
+          51.9258867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "13",
+        "richtungsid": "2",
+        "akthst": "45541",
+        "delay": -7,
+        "nachhst": "45541",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "45541",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "13",
+        "fahrzeugid": "1549",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100165_13_13_48",
+        "abfahrtstart": "1784280060",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784281800",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6011133,
+          51.9763317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "2",
+        "akthst": "45850",
+        "delay": 0,
+        "nachhst": "45961",
+        "richtungstext": "Krögerweg",
+        "starthst": "45850",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "17",
+        "fahrzeugid": "2268",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100169_13_17_63",
+        "abfahrtstart": "1784280720",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784283840",
+        "zielhst": "43730"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6029294,
+          51.9970792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "45251",
+        "delay": 148,
+        "nachhst": "45260",
+        "richtungstext": "Amelsbüren",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 16,
+        "linientext": "1",
+        "fahrzeugid": "6333",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100017_6_1_543",
+        "abfahrtstart": "1784278740",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784283660",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5851878,
+          51.9614242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "47291",
+        "delay": 315,
+        "nachhst": "47501",
+        "richtungstext": "Amelsbüren Bahnhof",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 38,
+        "linientext": "1",
+        "fahrzeugid": "5429",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100178_5_1_421",
+        "abfahrtstart": "1784276340",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281260",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6316383,
+          51.9196594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "13",
+        "richtungsid": "2",
+        "akthst": "41481",
+        "delay": 5,
+        "nachhst": "41940",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "45541",
+        "betriebstag": "2026-07-17",
+        "sequenz": 15,
+        "linientext": "13",
+        "fahrzeugid": "2455",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100166_9_13_47",
+        "abfahrtstart": "1784278860",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784280600",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6226606,
+          51.9609875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "2",
+        "akthst": "47261",
+        "delay": 617,
+        "nachhst": "47251",
+        "richtungstext": "Hiltrup Franz-Marc-Weg",
+        "starthst": "45851",
+        "betriebstag": "2026-07-17",
+        "sequenz": 36,
+        "linientext": "9",
+        "fahrzeugid": "5575",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100214_5_9_485",
+        "abfahrtstart": "1784276040",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280180",
+        "zielhst": "43950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6370369,
+          51.9038603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "2",
+        "akthst": "42381",
+        "delay": 58,
+        "nachhst": "42386",
+        "richtungstext": "Alte Sternwarte",
+        "starthst": "4247001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 18,
+        "linientext": "2",
+        "fahrzeugid": "2456",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100030_6_2_3",
+        "abfahrtstart": "1784278740",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784282400",
+        "zielhst": "45385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6577047,
+          51.9672867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "2",
+        "akthst": "43771",
+        "delay": 67,
+        "nachhst": "47907",
+        "richtungstext": "Krögerweg",
+        "starthst": "45850",
+        "betriebstag": "2026-07-17",
+        "sequenz": 30,
+        "linientext": "17",
+        "fahrzeugid": "2355",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100173_7_17_65",
+        "abfahrtstart": "1784277120",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784280240",
+        "zielhst": "43730"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6435181,
+          51.9275256
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "2",
+        "akthst": "46311",
+        "delay": -12,
+        "nachhst": "42488",
+        "richtungstext": "Clemenshospital",
+        "starthst": "46301",
+        "betriebstag": "2026-07-17",
+        "sequenz": 13,
+        "linientext": "4",
+        "fahrzeugid": "2274",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100025_8_4_7",
+        "abfahrtstart": "1784279220",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784283000",
+        "zielhst": "4404001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6638822,
+          51.98969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "1",
+        "akthst": "42061",
+        "delay": 17,
+        "nachhst": "42031",
+        "richtungstext": "Coerde",
+        "starthst": "47470",
+        "betriebstag": "2026-07-17",
+        "sequenz": 42,
+        "linientext": "8",
+        "fahrzeugid": "2366",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100162_8_8_23",
+        "abfahrtstart": "1784276760",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784280240",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6523631,
+          51.9969853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "1",
+        "akthst": "42211",
+        "delay": 451,
+        "nachhst": "42200",
+        "richtungstext": "Gelmer",
+        "starthst": "44040",
+        "betriebstag": "2026-07-17",
+        "sequenz": 25,
+        "linientext": "4",
+        "fahrzeugid": "5615",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100150_7_4_564",
+        "abfahrtstart": "1784277120",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784280780",
+        "zielhst": "46301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6552692,
+          51.9679364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "45211",
+        "delay": 295,
+        "nachhst": "45201",
+        "richtungstext": "Nienberge Hannaschweg",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 33,
+        "linientext": "5",
+        "fahrzeugid": "5585",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100122_5_5_484",
+        "abfahrtstart": "1784276580",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281200",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6060153,
+          51.9662217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "1",
+        "akthst": "45201",
+        "delay": 273,
+        "nachhst": "45321",
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "47600",
+        "betriebstag": "2026-07-17",
+        "sequenz": 38,
+        "linientext": "1",
+        "fahrzeugid": "5326",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100020_4_1_511",
+        "abfahrtstart": "1784276220",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281200",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5990825,
+          51.9649867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "2",
+        "akthst": "41000",
+        "delay": -64,
+        "nachhst": "41982",
+        "richtungstext": "Mecklenbeck Waldweg",
+        "starthst": "42240",
+        "betriebstag": "2026-07-17",
+        "sequenz": 23,
+        "linientext": "10",
+        "fahrzeugid": "2348",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100061_7_10_38",
+        "abfahrtstart": "1784278320",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784282280",
+        "zielhst": "44940"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6335592,
+          51.9564819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "2",
+        "akthst": "47221",
+        "delay": 176,
+        "nachhst": "4722802",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 40,
+        "linientext": "6",
+        "fahrzeugid": "2448",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100147_7_6_17",
+        "abfahrtstart": "1784276520",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784279940",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6515378,
+          51.9043261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "1",
+        "akthst": "41021",
+        "delay": 192,
+        "nachhst": "4100001",
+        "richtungstext": "Handorf Kaserne",
+        "starthst": "45385",
+        "betriebstag": "2026-07-17",
+        "sequenz": 19,
+        "linientext": "2",
+        "fahrzeugid": "6336",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100083_6_2_542",
+        "abfahrtstart": "1784278440",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784281800",
+        "zielhst": "4247001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6281564,
+          51.955795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "2",
+        "akthst": "45901",
+        "delay": 111,
+        "nachhst": "45911",
+        "richtungstext": "Tannenhof",
+        "starthst": "46705",
+        "betriebstag": "2026-07-17",
+        "sequenz": 11,
+        "linientext": "11",
+        "fahrzeugid": "2179",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100058_5_11_43",
+        "abfahrtstart": "1784279220",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784282760",
+        "zielhst": "43010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5728256,
+          51.9733753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "1",
+        "akthst": "43471",
+        "delay": 268,
+        "nachhst": "43480",
+        "richtungstext": "Von-Humboldt-Straße",
+        "starthst": "43950",
+        "betriebstag": "2026-07-17",
+        "sequenz": 16,
+        "linientext": "9",
+        "fahrzeugid": "6337",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100215_5_9_544",
+        "abfahrtstart": "1784278440",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784282340",
+        "zielhst": "45851"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6273547,
+          51.9304081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "1",
+        "akthst": "44080",
+        "delay": 66,
+        "nachhst": "44061",
+        "richtungstext": "Gelmer",
+        "starthst": "44040",
+        "betriebstag": "2026-07-17",
+        "sequenz": 6,
+        "linientext": "4",
+        "fahrzeugid": "5612",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100105_8_4_565",
+        "abfahrtstart": "1784279520",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784283480",
+        "zielhst": "46301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6111558,
+          51.9402014
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "44411",
+        "delay": 43,
+        "nachhst": "44141",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44940",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "10",
+        "fahrzeugid": "1650",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100127_6_10_39",
+        "abfahrtstart": "1784279760",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784283600",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5802819,
+          51.9255217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "2",
+        "akthst": "44271",
+        "delay": 5,
+        "nachhst": "44221",
+        "richtungstext": "Mecklenbeck Meckmannweg",
+        "starthst": "42240",
+        "betriebstag": "2026-07-17",
+        "sequenz": 36,
+        "linientext": "10",
+        "fahrzeugid": "5578",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100124_10_10_486",
+        "abfahrtstart": "1784277120",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281080",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.597755,
+          51.9426878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "2",
+        "akthst": "45500",
+        "delay": 16,
+        "nachhst": "45331",
+        "richtungstext": "Hiltrup Franz-Marc-Weg",
+        "starthst": "45851",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "9",
+        "fahrzeugid": "1646",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100217_7_9_32",
+        "abfahrtstart": "1784279640",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784283780",
+        "zielhst": "43950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5960642,
+          51.9917978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "33",
+        "richtungsid": "1",
+        "akthst": "43432",
+        "delay": 48,
+        "nachhst": "41000",
+        "richtungstext": "Ringlinie",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "33",
+        "fahrzeugid": "1865",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100139_4_33_80",
+        "abfahrtstart": "1784280000",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784282640",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.628185,
+          51.9549567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "12",
+        "richtungsid": "2",
+        "akthst": "41021",
+        "delay": -22,
+        "nachhst": "41000",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "46001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 24,
+        "linientext": "12",
+        "fahrzeugid": "1649",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100168_10_12_49",
+        "abfahrtstart": "1784277960",
+        "visfahrplanlagezst": 1784279861,
+        "ankunftziel": "1784280000",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6309561,
+          51.9563428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "110",
+        "richtungsid": "1",
+        "akthst": "43391",
+        "delay": -15562,
+        "richtungstext": "Loddenheide ü. Königsweg",
+        "starthst": "46601",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "E10",
+        "fahrzeugid": "2075",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100197_17_110_69",
+        "abfahrtstart": "1784294700",
+        "visfahrplanlagezst": 1784280039,
+        "ankunftziel": "1784295600",
+        "zielhst": "43391"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6499717,
+          51.9410467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "19",
+        "richtungsid": "1",
+        "akthst": "45831",
+        "delay": 178,
+        "nachhst": "46811",
+        "richtungstext": "Sprakel",
+        "starthst": "42320",
+        "betriebstag": "2026-07-17",
+        "sequenz": 32,
+        "linientext": "19",
+        "fahrzeugid": "5456",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100211_9_19_435",
+        "abfahrtstart": "1784277360",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280360",
+        "zielhst": "46742"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6147947,
+          52.0037058
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "1",
+        "akthst": "41291",
+        "delay": 101,
+        "nachhst": "41321",
+        "richtungstext": "Von-Humboldt-Straße",
+        "starthst": "43950",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "9",
+        "fahrzeugid": "5383",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100216_6_9_513",
+        "abfahrtstart": "1784277240",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784281140",
+        "zielhst": "45851"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6230572,
+          51.9662153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "2",
+        "akthst": "43501",
+        "delay": 117,
+        "nachhst": "43491",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "46930",
+        "betriebstag": "2026-07-17",
+        "sequenz": 35,
+        "linientext": "5",
+        "fahrzeugid": "2266",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100072_5_5_12",
+        "abfahrtstart": "1784277000",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784281620",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6242131,
+          51.9397522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "1",
+        "akthst": "44040",
+        "delay": 0,
+        "nachhst": "44321",
+        "richtungstext": "Gelmer",
+        "starthst": "44040",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "4",
+        "fahrzeugid": "2379",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100011_10_4_6",
+        "abfahrtstart": "1784280720",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784284380",
+        "zielhst": "46301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6157992,
+          51.9328858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "34",
+        "richtungsid": "1",
+        "akthst": "43432",
+        "delay": 0,
+        "nachhst": "41021",
+        "richtungstext": "Ringlinie",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "34",
+        "fahrzeugid": "5624",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100099_8_34_567",
+        "abfahrtstart": "1784280600",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784283120",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6291217,
+          51.9547353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "2",
+        "akthst": "41472",
+        "delay": 95,
+        "nachhst": "41321",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "46930",
+        "betriebstag": "2026-07-17",
+        "sequenz": 24,
+        "linientext": "5",
+        "fahrzeugid": "2270",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100074_6_5_9",
+        "abfahrtstart": "1784278200",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784282820",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.617605,
+          51.9664906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "4722802",
+        "delay": 0,
+        "nachhst": "47231",
+        "richtungstext": "Nienberge Hannaschweg",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "5",
+        "fahrzeugid": "2267",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100158_6_5_11",
+        "abfahrtstart": "1784280180",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784284800",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6537358,
+          51.9051472
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "12",
+        "richtungsid": "1",
+        "akthst": "41044",
+        "delay": 65,
+        "nachhst": "41940",
+        "richtungstext": "Gievenbeck Rüschhausweg",
+        "starthst": "41000",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "12",
+        "fahrzeugid": "2554",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100186_12_12_46",
+        "abfahrtstart": "1784279520",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784281620",
+        "zielhst": "46001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6245933,
+          51.9621272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "13",
+        "richtungsid": "1",
+        "akthst": "46190",
+        "delay": -2,
+        "nachhst": "45541",
+        "richtungstext": "Technologiepark",
+        "starthst": "41000",
+        "betriebstag": "2026-07-17",
+        "sequenz": 19,
+        "linientext": "13",
+        "fahrzeugid": "1549",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100165_12_13_48",
+        "abfahrtstart": "1784277720",
+        "visfahrplanlagezst": 1784279279,
+        "ankunftziel": "1784279280",
+        "zielhst": "45541"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6009206,
+          51.9762133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "44311",
+        "delay": 79,
+        "nachhst": "41421",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 19,
+        "linientext": "10",
+        "fahrzeugid": "2375",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100062_8_10_37",
+        "abfahrtstart": "1784278560",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784282400",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6174825,
+          51.9543517
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "2",
+        "akthst": "43501",
+        "delay": 98,
+        "nachhst": "43491",
+        "richtungstext": "Hiltrup Franz-Marc-Weg",
+        "starthst": "45851",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "9",
+        "fahrzeugid": "1552",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100219_6_9_34",
+        "abfahrtstart": "1784277240",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784281380",
+        "zielhst": "43950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6249364,
+          51.9370797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "2",
+        "akthst": "45641",
+        "delay": 141,
+        "nachhst": "46071",
+        "richtungstext": "Krögerweg",
+        "starthst": "45850",
+        "betriebstag": "2026-07-17",
+        "sequenz": 6,
+        "linientext": "17",
+        "fahrzeugid": "5472",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100170_10_17_427",
+        "abfahrtstart": "1784279520",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784282640",
+        "zielhst": "43730"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6172631,
+          51.9895919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "2",
+        "akthst": "46705",
+        "delay": 0,
+        "nachhst": "45670",
+        "richtungstext": "Tannenhof",
+        "starthst": "46705",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "11",
+        "fahrzeugid": "5470",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100075_6_11_422",
+        "abfahrtstart": "1784280420",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784283960",
+        "zielhst": "43010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5733192,
+          51.9574925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "1",
+        "akthst": "41032",
+        "delay": 240,
+        "nachhst": "41021",
+        "richtungstext": "Gelmer",
+        "starthst": "44040",
+        "betriebstag": "2026-07-17",
+        "sequenz": 16,
+        "linientext": "4",
+        "fahrzeugid": "5614",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100104_8_4_563",
+        "abfahrtstart": "1784278320",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784281980",
+        "zielhst": "46301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6264053,
+          51.9578431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "1",
+        "akthst": "47371",
+        "delay": 163,
+        "nachhst": "43321",
+        "richtungstext": "Coerde",
+        "starthst": "47470",
+        "betriebstag": "2026-07-17",
+        "sequenz": 12,
+        "linientext": "8",
+        "fahrzeugid": "2273",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100204_6_8_29",
+        "abfahrtstart": "1784279160",
+        "visfahrplanlagezst": 1784279985,
+        "ankunftziel": "1784282640",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6904925,
+          51.9276494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "14",
+        "richtungsid": "1",
+        "akthst": "41982",
+        "delay": 567,
+        "nachhst": "41071",
+        "richtungstext": "Zoo/Naturkundemuseum",
+        "starthst": "43121",
+        "betriebstag": "2026-07-17",
+        "sequenz": 14,
+        "linientext": "14",
+        "fahrzeugid": "5299",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100228_9_14_402",
+        "abfahrtstart": "1784278380",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280720",
+        "zielhst": "45860"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6308903,
+          51.9577228
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "2",
+        "akthst": "41000",
+        "delay": 57,
+        "nachhst": "41982",
+        "richtungstext": "Clemenshospital",
+        "starthst": "46301",
+        "betriebstag": "2026-07-17",
+        "sequenz": 30,
+        "linientext": "4",
+        "fahrzeugid": "2447",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100009_6_4_8",
+        "abfahrtstart": "1784277720",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784281800",
+        "zielhst": "4404001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6342861,
+          51.9573106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "13",
+        "richtungsid": "1",
+        "akthst": "45201",
+        "delay": 57,
+        "nachhst": "45375",
+        "richtungstext": "Technologiepark",
+        "starthst": "41000",
+        "betriebstag": "2026-07-17",
+        "sequenz": 11,
+        "linientext": "13",
+        "fahrzeugid": "5415",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100163_13_13_424",
+        "abfahrtstart": "1784278920",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280480",
+        "zielhst": "45541"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6000478,
+          51.9649828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "46941",
+        "delay": 219,
+        "nachhst": "46919",
+        "richtungstext": "Nienberge Hannaschweg",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 49,
+        "linientext": "5",
+        "fahrzeugid": "2451",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100071_7_5_14",
+        "abfahrtstart": "1784275380",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280000",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5530917,
+          51.9978931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "4666002",
+        "delay": 0,
+        "nachhst": "46671",
+        "richtungstext": "Amelsbüren",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "1",
+        "fahrzeugid": "5480",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100182_6_1_426",
+        "abfahrtstart": "1784281140",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784286060",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5278242,
+          51.9542525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "1",
+        "akthst": "45491",
+        "delay": 210,
+        "nachhst": "45201",
+        "richtungstext": "Gievenbeck Dieckmannstr.",
+        "starthst": "43010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 27,
+        "linientext": "11",
+        "fahrzeugid": "2145",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100184_6_11_41",
+        "abfahrtstart": "1784277480",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281020",
+        "zielhst": "46705"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6016717,
+          51.9647767
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "1",
+        "akthst": "47541",
+        "delay": 364,
+        "nachhst": "47251",
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "47600",
+        "betriebstag": "2026-07-17",
+        "sequenz": 14,
+        "linientext": "1",
+        "fahrzeugid": "6339",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100018_5_1_545",
+        "abfahrtstart": "1784278620",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784283600",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6392386,
+          51.9028881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "1",
+        "akthst": "43621",
+        "delay": 166,
+        "nachhst": "41021",
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "47600",
+        "betriebstag": "2026-07-17",
+        "sequenz": 29,
+        "linientext": "1",
+        "fahrzeugid": "5382",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100195_5_1_515",
+        "abfahrtstart": "1784277420",
+        "visfahrplanlagezst": 1784280043,
+        "ankunftziel": "1784282400",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6262131,
+          51.9547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "20",
+        "richtungsid": "2",
+        "akthst": "46845",
+        "delay": 235,
+        "nachhst": "46841",
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 3,
+        "linientext": "20",
+        "fahrzeugid": "5555",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100121_13_20_497",
+        "abfahrtstart": "1784279640",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784281080",
+        "zielhst": "46350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5794606,
+          51.9309286
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "1",
+        "akthst": "47600",
+        "delay": 32,
+        "nachhst": "47851",
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "47600",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "1",
+        "fahrzeugid": "2548",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100031_6_1_1",
+        "abfahrtstart": "1784279820",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784284800",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6097806,
+          51.8774478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "2",
+        "akthst": "4343101",
+        "delay": 299,
+        "nachhst": "43421",
+        "richtungstext": "Wolbeck Nogatstraße",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 22,
+        "linientext": "8",
+        "fahrzeugid": "2180",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100064_8_8_24",
+        "abfahrtstart": "1784277960",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784281620",
+        "zielhst": "47470"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6316517,
+          51.9543381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "2",
+        "akthst": "46350",
+        "delay": 438,
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 50,
+        "linientext": "15",
+        "fahrzeugid": "2357",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100048_5_15_55",
+        "abfahrtstart": "1784275440",
+        "visfahrplanlagezst": 1784279959,
+        "ankunftziel": "1784279520",
+        "zielhst": "46350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5273678,
+          51.9146453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "14",
+        "richtungsid": "2",
+        "akthst": "41061",
+        "delay": 233,
+        "nachhst": "43181",
+        "richtungstext": "Kehre Maikottenweg",
+        "starthst": "45860",
+        "betriebstag": "2026-07-17",
+        "sequenz": 18,
+        "linientext": "14",
+        "fahrzeugid": "2147",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100229_10_14_51",
+        "abfahrtstart": "1784278260",
+        "visfahrplanlagezst": 1784280051,
+        "ankunftziel": "1784280480",
+        "zielhst": "43121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6379769,
+          51.9586303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "1",
+        "akthst": "4666002",
+        "delay": 8,
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "47600",
+        "betriebstag": "2026-07-17",
+        "sequenz": 57,
+        "linientext": "1",
+        "fahrzeugid": "5480",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100182_5_1_426",
+        "abfahrtstart": "1784275020",
+        "visfahrplanlagezst": 1784280009,
+        "ankunftziel": "1784280000",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5278158,
+          51.9542467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "1",
+        "akthst": "45451",
+        "delay": 15,
+        "nachhst": "45441",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 40,
+        "linientext": "15",
+        "fahrzeugid": "5473",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100183_6_15_432",
+        "abfahrtstart": "1784276580",
+        "visfahrplanlagezst": 1784280017,
+        "ankunftziel": "1784280780",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6119092,
+          51.9827053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "12",
+        "richtungsid": "2",
+        "akthst": "45321",
+        "delay": -24,
+        "nachhst": "45201",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "46001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 14,
+        "linientext": "12",
+        "fahrzeugid": "5455",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100164_12_12_429",
+        "abfahrtstart": "1784279160",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784281200",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5990325,
+          51.9646078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "2",
+        "akthst": "41923",
+        "delay": 165,
+        "nachhst": "41032",
+        "richtungstext": "Tannenhof",
+        "starthst": "46705",
+        "betriebstag": "2026-07-17",
+        "sequenz": 24,
+        "linientext": "11",
+        "fahrzeugid": "2078",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100207_6_11_44",
+        "abfahrtstart": "1784278020",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784281560",
+        "zielhst": "43010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6261158,
+          51.9604094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "98",
+        "richtungsid": "2",
+        "akthst": "45901",
+        "delay": -215,
+        "nachhst": "46021",
+        "richtungstext": "Schulbus",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 10,
+        "linientext": "E98",
+        "fahrzeugid": "5395",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100008_2_98_516",
+        "abfahrtstart": "1784288400",
+        "visfahrplanlagezst": 1784280025,
+        "ankunftziel": "1784290560",
+        "zielhst": "46921"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5700444,
+          51.9753097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "1",
+        "akthst": "4585001",
+        "delay": 237,
+        "nachhst": "45851",
+        "richtungstext": "Von-Humboldt-Straße",
+        "starthst": "43950",
+        "betriebstag": "2026-07-17",
+        "sequenz": 42,
+        "linientext": "9",
+        "fahrzeugid": "1550",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100213_6_9_33",
+        "abfahrtstart": "1784276040",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784279940",
+        "zielhst": "45851"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6031108,
+          51.9969531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "1",
+        "akthst": "43401",
+        "delay": 53,
+        "nachhst": "43411",
+        "richtungstext": "Coerde",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 20,
+        "linientext": "6",
+        "fahrzeugid": "2175",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100069_8_6_16",
+        "abfahrtstart": "1784278440",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784281740",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6455492,
+          51.9455319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "2",
+        "akthst": "43111",
+        "delay": 303,
+        "nachhst": "43101",
+        "richtungstext": "Tannenhof",
+        "starthst": "46705",
+        "betriebstag": "2026-07-17",
+        "sequenz": 32,
+        "linientext": "11",
+        "fahrzeugid": "2449",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100060_6_11_40",
+        "abfahrtstart": "1784276820",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280360",
+        "zielhst": "43010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6597783,
+          51.9539758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "2",
+        "akthst": "45991",
+        "delay": 271,
+        "nachhst": "45981",
+        "richtungstext": "Alte Sternwarte",
+        "starthst": "4247001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 41,
+        "linientext": "2",
+        "fahrzeugid": "5286",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100029_6_2_404",
+        "abfahrtstart": "1784276340",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784280000",
+        "zielhst": "45385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5966806,
+          51.9695914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "2",
+        "akthst": "42010",
+        "delay": 0,
+        "nachhst": "42191",
+        "richtungstext": "Wolbeck Nogatstraße",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "8",
+        "fahrzeugid": "2347",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100065_8_8_26",
+        "abfahrtstart": "1784280360",
+        "visfahrplanlagezst": 1784280041,
+        "ankunftziel": "1784284020",
+        "zielhst": "47470"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6392697,
+          51.9946919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "2",
+        "akthst": "41044",
+        "delay": 108,
+        "nachhst": "41940",
+        "richtungstext": "Alte Sternwarte",
+        "starthst": "4247001",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "2",
+        "fahrzeugid": "2446",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100024_5_2_5",
+        "abfahrtstart": "1784277540",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784281200",
+        "zielhst": "45385"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6260458,
+          51.9620747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "8",
+        "richtungsid": "2",
+        "akthst": "42101",
+        "delay": 160,
+        "nachhst": "41161",
+        "richtungstext": "Wolbeck Nogatstraße",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 12,
+        "linientext": "8",
+        "fahrzeugid": "2376",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100067_7_8_30",
+        "abfahrtstart": "1784279160",
+        "visfahrplanlagezst": 1784280051,
+        "ankunftziel": "1784282820",
+        "zielhst": "47470"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6385983,
+          51.9741739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "47655",
+        "delay": 299,
+        "nachhst": "47651",
+        "richtungstext": "Nienberge Hannaschweg",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 11,
+        "linientext": "5",
+        "fahrzeugid": "5588",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100156_5_5_483",
+        "abfahrtstart": "1784278980",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784283600",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6247825,
+          51.9059519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "1",
+        "akthst": "45850",
+        "delay": 644,
+        "nachhst": "45301",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 46,
+        "linientext": "15",
+        "fahrzeugid": "5705",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100054_5_15_471",
+        "abfahrtstart": "1784275380",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784279580",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5984247,
+          51.9979608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "14",
+        "richtungsid": "2",
+        "akthst": "45071",
+        "delay": 63,
+        "nachhst": "45081",
+        "richtungstext": "Gallenkamp",
+        "starthst": "45860",
+        "betriebstag": "2026-07-17",
+        "sequenz": 7,
+        "linientext": "14",
+        "fahrzeugid": "2076",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100231_10_14_52",
+        "abfahrtstart": "1784279460",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784281500",
+        "zielhst": "43131"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6076267,
+          51.9611344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "2",
+        "akthst": "43991",
+        "delay": 102,
+        "nachhst": "43371",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 26,
+        "linientext": "6",
+        "fahrzeugid": "2547",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100221_7_6_18",
+        "abfahrtstart": "1784277720",
+        "visfahrplanlagezst": 1784280043,
+        "ankunftziel": "1784281140",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6611647,
+          51.9333283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "47621",
+        "delay": 442,
+        "nachhst": "47641",
+        "richtungstext": "Amelsbüren Bahnhof",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 54,
+        "linientext": "1",
+        "fahrzeugid": "2367",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100142_4_1_2",
+        "abfahrtstart": "1784275140",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784280060",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6050147,
+          51.884625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "68",
+        "richtungsid": "1",
+        "akthst": "43261",
+        "delay": -13,
+        "nachhst": "43271",
+        "richtungstext": "Gremmendorfer Weg",
+        "starthst": "47355",
+        "betriebstag": "2026-07-17",
+        "sequenz": 3,
+        "linientext": "68",
+        "fahrzeugid": "5572",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100084_38_68_496",
+        "abfahrtstart": "1784279880",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784280480",
+        "zielhst": "43360"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6852592,
+          51.9143797
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "1",
+        "akthst": "42091",
+        "delay": 167,
+        "nachhst": "42081",
+        "richtungstext": "Coerde",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 31,
+        "linientext": "6",
+        "fahrzeugid": "2552",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100043_9_6_15",
+        "abfahrtstart": "1784277240",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784280540",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6429944,
+          51.9777372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "2",
+        "akthst": "43591",
+        "delay": 54,
+        "nachhst": "43581",
+        "richtungstext": "Clemenshospital",
+        "starthst": "46301",
+        "betriebstag": "2026-07-17",
+        "sequenz": 36,
+        "linientext": "4",
+        "fahrzeugid": "5618",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100151_8_4_562",
+        "abfahrtstart": "1784276820",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784280600",
+        "zielhst": "4404001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6235781,
+          51.9422103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "2",
+        "akthst": "41281",
+        "delay": 148,
+        "nachhst": "41291",
+        "richtungstext": "Mecklenbeck Meckmannweg",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 18,
+        "linientext": "16",
+        "fahrzeugid": "5706",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100055_7_16_472",
+        "abfahrtstart": "1784278500",
+        "visfahrplanlagezst": 1784280043,
+        "ankunftziel": "1784281860",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6248253,
+          51.9654983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "1",
+        "akthst": "46705",
+        "delay": 245,
+        "richtungstext": "Gievenbeck Dieckmannstr.",
+        "nachhst": "46705",
+        "starthst": "43010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 45,
+        "linientext": "11",
+        "fahrzeugid": "5476",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100177_6_11_428",
+        "abfahrtstart": "1784276280",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784279820",
+        "zielhst": "46705"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5736286,
+          51.9576106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "1",
+        "akthst": "43551",
+        "delay": 203,
+        "nachhst": "43561",
+        "richtungstext": "Nienberge",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 23,
+        "linientext": "5",
+        "fahrzeugid": "2369",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100073_6_5_10",
+        "abfahrtstart": "1784277780",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784282400",
+        "zielhst": "46930"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6304742,
+          51.9454617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "19",
+        "richtungsid": "2",
+        "akthst": "46011",
+        "delay": 468,
+        "nachhst": "45921",
+        "richtungstext": "Waldfriedhof Lauheide",
+        "starthst": "46742",
+        "betriebstag": "2026-07-17",
+        "sequenz": 16,
+        "linientext": "19",
+        "fahrzeugid": "1652",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100209_4_19_75",
+        "abfahrtstart": "1784277240",
+        "visfahrplanlagezst": 1784278849,
+        "ankunftziel": "1784280240",
+        "zielhst": "42320"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6199222,
+          51.9931669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "1",
+        "richtungsid": "2",
+        "akthst": "41048",
+        "delay": 457,
+        "nachhst": "41051",
+        "richtungstext": "Amelsbüren Bahnhof",
+        "starthst": "4666002",
+        "betriebstag": "2026-07-17",
+        "sequenz": 26,
+        "linientext": "1",
+        "fahrzeugid": "5587",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100021_5_1_481",
+        "abfahrtstart": "1784277540",
+        "visfahrplanlagezst": 1784280063,
+        "ankunftziel": "1784282460",
+        "zielhst": "47600"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6349567,
+          51.9619681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "4241101",
+        "delay": 305,
+        "nachhst": "42401",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "10",
+        "fahrzeugid": "2378",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100063_8_10_36",
+        "abfahrtstart": "1784277360",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784281200",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6413894,
+          51.9616928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "2",
+        "akthst": "44201",
+        "delay": -39,
+        "nachhst": "44171",
+        "richtungstext": "Mecklenbeck Meckmannweg",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 30,
+        "linientext": "16",
+        "fahrzeugid": "2551",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100126_7_16_59",
+        "abfahrtstart": "1784277300",
+        "visfahrplanlagezst": 1784280043,
+        "ankunftziel": "1784280660",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.601795,
+          51.9355519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "1",
+        "akthst": "4247001",
+        "delay": 566,
+        "richtungstext": "Handorf Kaserne",
+        "starthst": "45385",
+        "betriebstag": "2026-07-17",
+        "sequenz": 40,
+        "linientext": "2",
+        "fahrzeugid": "5479",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100181_6_2_423",
+        "abfahrtstart": "1784276040",
+        "visfahrplanlagezst": 1784279967,
+        "ankunftziel": "1784279400",
+        "zielhst": "4247001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7216031,
+          52.00217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "1",
+        "akthst": "46301",
+        "delay": 173,
+        "richtungstext": "Gelmer",
+        "starthst": "44040",
+        "betriebstag": "2026-07-17",
+        "sequenz": 43,
+        "linientext": "4",
+        "fahrzeugid": "2274",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100025_7_4_7",
+        "abfahrtstart": "1784274720",
+        "visfahrplanlagezst": 1784278555,
+        "ankunftziel": "1784278380",
+        "zielhst": "46301"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6765189,
+          52.0302464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "1",
+        "akthst": "44141",
+        "delay": 40,
+        "nachhst": "44151",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 15,
+        "linientext": "15",
+        "fahrzeugid": "5420",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100051_6_15_433",
+        "abfahrtstart": "1784278980",
+        "visfahrplanlagezst": 1784280041,
+        "ankunftziel": "1784283180",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5833489,
+          51.9265453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "2",
+        "akthst": "4441101",
+        "delay": 173,
+        "nachhst": "4498101",
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 37,
+        "linientext": "15",
+        "fahrzeugid": "2350",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100049_6_15_54",
+        "abfahrtstart": "1784276640",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784280720",
+        "zielhst": "46350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5787611,
+          51.9252319
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "2",
+        "akthst": "46101",
+        "delay": -42,
+        "nachhst": "46981",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "46930",
+        "betriebstag": "2026-07-17",
+        "sequenz": 10,
+        "linientext": "5",
+        "fahrzeugid": "5471",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100081_6_5_425",
+        "abfahrtstart": "1784279400",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784284020",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5482514,
+          51.9852306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "42275",
+        "delay": 96,
+        "nachhst": "42240",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 45,
+        "linientext": "10",
+        "fahrzeugid": "5320",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100128_6_10_514",
+        "abfahrtstart": "1784274960",
+        "visfahrplanlagezst": 1784278897,
+        "ankunftziel": "1784278800",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7072131,
+          52.0108197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "13",
+        "richtungsid": "1",
+        "akthst": "41000",
+        "delay": 0,
+        "nachhst": "41071",
+        "richtungstext": "Technologiepark",
+        "starthst": "41000",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "13",
+        "fahrzeugid": "1649",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100168_11_13_49",
+        "abfahrtstart": "1784280120",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784281680",
+        "zielhst": "45541"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6346014,
+          51.9573683
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "1",
+        "akthst": "41141",
+        "delay": 206,
+        "nachhst": "41161",
+        "richtungstext": "Kinderhaus Schulzentrum",
+        "starthst": "43730",
+        "betriebstag": "2026-07-17",
+        "sequenz": 20,
+        "linientext": "17",
+        "fahrzeugid": "5459",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100085_6_17_437",
+        "abfahrtstart": "1784277840",
+        "visfahrplanlagezst": 1784280051,
+        "ankunftziel": "1784281080",
+        "zielhst": "4585001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6353603,
+          51.9710739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "1",
+        "akthst": "44110",
+        "delay": 0,
+        "nachhst": "44121",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "10",
+        "fahrzeugid": "5576",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100002_9_10_482",
+        "abfahrtstart": "1784280960",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784284800",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5709925,
+          51.9295231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "33",
+        "richtungsid": "1",
+        "akthst": "44131",
+        "delay": 86,
+        "nachhst": "41411",
+        "richtungstext": "Hafenstraße",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 22,
+        "linientext": "33",
+        "fahrzeugid": "1863",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100133_4_33_79",
+        "abfahrtstart": "1784277600",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784280240",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6206792,
+          51.9550419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "10",
+        "richtungsid": "2",
+        "akthst": "42441",
+        "delay": 126,
+        "nachhst": "42301",
+        "richtungstext": "Mecklenbeck Meckmannweg",
+        "starthst": "42240",
+        "betriebstag": "2026-07-17",
+        "sequenz": 8,
+        "linientext": "10",
+        "fahrzeugid": "5320",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100128_8_10_514",
+        "abfahrtstart": "1784279520",
+        "visfahrplanlagezst": 1784280059,
+        "ankunftziel": "1784283480",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6989553,
+          51.9885658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "33",
+        "richtungsid": "1",
+        "akthst": "41161",
+        "delay": 155,
+        "nachhst": "4120101",
+        "richtungstext": "Ringlinie",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 9,
+        "linientext": "33",
+        "fahrzeugid": "2334",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100132_3_33_81",
+        "abfahrtstart": "1784278800",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784281440",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6334717,
+          51.9730183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "1",
+        "akthst": "45500",
+        "delay": 294,
+        "nachhst": "45961",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 34,
+        "linientext": "16",
+        "fahrzeugid": "2450",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100045_6_16_58",
+        "abfahrtstart": "1784276700",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784280120",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6028947,
+          51.9944544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "14",
+        "richtungsid": "1",
+        "akthst": "45860",
+        "delay": 544,
+        "richtungstext": "Zoo/Naturkundemuseum",
+        "starthst": "43131",
+        "betriebstag": "2026-07-17",
+        "sequenz": 27,
+        "linientext": "14",
+        "fahrzeugid": "2148",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100230_12_14_50",
+        "abfahrtstart": "1784277360",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784279520",
+        "zielhst": "45860"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5897183,
+          51.9495528
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "110",
+        "richtungsid": "2",
+        "akthst": "4666002",
+        "delay": -16118,
+        "richtungstext": "Roxel Hallenbad",
+        "starthst": "46601",
+        "betriebstag": "2026-07-17",
+        "sequenz": 17,
+        "linientext": "E10",
+        "fahrzeugid": "2453",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100095_6_110_122",
+        "abfahrtstart": "1784294700",
+        "visfahrplanlagezst": 1784279963,
+        "ankunftziel": "1784296080",
+        "zielhst": "4666002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5278186,
+          51.9543083
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "2",
+        "akthst": "42010",
+        "delay": 0,
+        "nachhst": "42191",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "6",
+        "fahrzeugid": "2454",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100160_9_6_19",
+        "abfahrtstart": "1784280120",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784283540",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6393769,
+          51.9946514
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "18",
+        "richtungsid": "2",
+        "akthst": "47641",
+        "delay": 64,
+        "nachhst": "47600",
+        "richtungstext": "Wolbeck",
+        "starthst": "40743",
+        "betriebstag": "2026-07-17",
+        "sequenz": 8,
+        "linientext": "18",
+        "fahrzeugid": "2335",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100196_9_18_68",
+        "abfahrtstart": "1784279280",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784282400",
+        "zielhst": "47121"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6030308,
+          51.8838017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "14",
+        "richtungsid": "1",
+        "akthst": "43161",
+        "delay": 42,
+        "nachhst": "43890",
+        "richtungstext": "Zoo/Naturkundemuseum",
+        "starthst": "43131",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "14",
+        "fahrzeugid": "2150",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100232_9_14_53",
+        "abfahrtstart": "1784279760",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784281920",
+        "zielhst": "45860"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6477739,
+          51.9589647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "18",
+        "richtungsid": "1",
+        "akthst": "47480",
+        "delay": 173,
+        "nachhst": "43251",
+        "richtungstext": "Alexianerweg",
+        "starthst": "47121",
+        "betriebstag": "2026-07-17",
+        "sequenz": 10,
+        "linientext": "18",
+        "fahrzeugid": "1648",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100197_10_18_69",
+        "abfahrtstart": "1784279220",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784282460",
+        "zielhst": "40743"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7124172,
+          51.9109953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "34",
+        "richtungsid": "1",
+        "akthst": "54331",
+        "delay": -7,
+        "nachhst": "45241",
+        "richtungstext": "Ringlinie",
+        "starthst": "43432",
+        "betriebstag": "2026-07-17",
+        "sequenz": 6,
+        "linientext": "34",
+        "fahrzeugid": "5623",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100100_6_34_568",
+        "abfahrtstart": "1784279400",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784281920",
+        "zielhst": "43432"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6070119,
+          51.9491181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "2",
+        "akthst": "41291",
+        "delay": 13,
+        "nachhst": "41048",
+        "richtungstext": "Hiltrup Franz-Marc-Weg",
+        "starthst": "45851",
+        "betriebstag": "2026-07-17",
+        "sequenz": 19,
+        "linientext": "9",
+        "fahrzeugid": "6353",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100218_7_9_541",
+        "abfahrtstart": "1784278440",
+        "visfahrplanlagezst": 1784280051,
+        "ankunftziel": "1784282580",
+        "zielhst": "43950"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6282286,
+          51.9648719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "1",
+        "akthst": "42351",
+        "delay": 103,
+        "nachhst": "42343",
+        "richtungstext": "Handorf Kaserne",
+        "starthst": "45385",
+        "betriebstag": "2026-07-17",
+        "sequenz": 28,
+        "linientext": "2",
+        "fahrzeugid": "2372",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100023_5_2_4",
+        "abfahrtstart": "1784277240",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784280600",
+        "zielhst": "4247001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.703275,
+          51.9756975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "12",
+        "richtungsid": "1",
+        "akthst": "45661",
+        "delay": 81,
+        "nachhst": "45651",
+        "richtungstext": "Gievenbeck Rüschhausweg",
+        "starthst": "41000",
+        "betriebstag": "2026-07-17",
+        "sequenz": 19,
+        "linientext": "12",
+        "fahrzeugid": "2549",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100167_10_12_45",
+        "abfahrtstart": "1784278320",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784280420",
+        "zielhst": "46001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5666425,
+          51.9622225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "2",
+        "akthst": "42101",
+        "delay": 328,
+        "nachhst": "41161",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "42010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 12,
+        "linientext": "6",
+        "fahrzeugid": "2351",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100070_10_6_13",
+        "abfahrtstart": "1784278920",
+        "visfahrplanlagezst": 1784280047,
+        "ankunftziel": "1784282340",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6362967,
+          51.9728814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "1",
+        "akthst": "44101",
+        "delay": -71,
+        "nachhst": "44131",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 14,
+        "linientext": "16",
+        "fahrzeugid": "2275",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100046_7_16_57",
+        "abfahrtstart": "1784279100",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784282520",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6167975,
+          51.9494128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "2",
+        "richtungsid": "1",
+        "akthst": "45201",
+        "delay": 0,
+        "nachhst": "45491",
+        "richtungstext": "Handorf Kaserne",
+        "starthst": "45385",
+        "betriebstag": "2026-07-17",
+        "sequenz": 7,
+        "linientext": "2",
+        "fahrzeugid": "5611",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100152_7_2_561",
+        "abfahrtstart": "1784279640",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784283000",
+        "zielhst": "4247001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6002253,
+          51.9648131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "20",
+        "richtungsid": "1",
+        "akthst": "44110",
+        "delay": 332,
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "46350",
+        "betriebstag": "2026-07-17",
+        "sequenz": 24,
+        "linientext": "20",
+        "fahrzeugid": "5555",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100121_12_20_497",
+        "abfahrtstart": "1784277840",
+        "visfahrplanlagezst": 1784279853,
+        "ankunftziel": "1784279520",
+        "zielhst": "44110"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.5710028,
+          51.9295003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "4",
+        "richtungsid": "2",
+        "akthst": "46301",
+        "delay": 0,
+        "nachhst": "46281",
+        "richtungstext": "Clemenshospital",
+        "starthst": "46301",
+        "betriebstag": "2026-07-17",
+        "sequenz": 1,
+        "linientext": "4",
+        "fahrzeugid": "5270",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100153_9_4_403",
+        "abfahrtstart": "1784280420",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784284200",
+        "zielhst": "4404001"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6763789,
+          52.0302958
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "5",
+        "richtungsid": "2",
+        "akthst": "47285",
+        "delay": 590,
+        "nachhst": "47651",
+        "richtungstext": "Hiltrup Bahnhof",
+        "starthst": "46930",
+        "betriebstag": "2026-07-17",
+        "sequenz": 43,
+        "linientext": "5",
+        "fahrzeugid": "5321",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100016_5_5_512",
+        "abfahrtstart": "1784275800",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784280420",
+        "zielhst": "4722802"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6328789,
+          51.9137978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "16",
+        "richtungsid": "1",
+        "akthst": "41291",
+        "delay": 121,
+        "nachhst": "41281",
+        "richtungstext": "Kinderhaus Brüningheide",
+        "starthst": "44110",
+        "betriebstag": "2026-07-17",
+        "sequenz": 21,
+        "linientext": "16",
+        "fahrzeugid": "2362",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100047_5_16_61",
+        "abfahrtstart": "1784277900",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784281320",
+        "zielhst": "45310"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6232967,
+          51.9673003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "17",
+        "richtungsid": "2",
+        "akthst": "41521",
+        "delay": 111,
+        "nachhst": "41161",
+        "richtungstext": "Hauptbahnhof",
+        "starthst": "45850",
+        "betriebstag": "2026-07-17",
+        "sequenz": 15,
+        "linientext": "17",
+        "fahrzeugid": "5430",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100082_8_17_438",
+        "abfahrtstart": "1784278860",
+        "visfahrplanlagezst": 1784280053,
+        "ankunftziel": "1784280540",
+        "zielhst": "41000"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6358903,
+          51.9764456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "6",
+        "richtungsid": "1",
+        "akthst": "43201",
+        "delay": 107,
+        "nachhst": "43921",
+        "richtungstext": "Coerde",
+        "starthst": "4722802",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "6",
+        "fahrzeugid": "2360",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100146_6_6_20",
+        "abfahrtstart": "1784279640",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784282940",
+        "zielhst": "42010"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6684767,
+          51.9060269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "1",
+        "akthst": "4319102",
+        "delay": 257,
+        "nachhst": "41061",
+        "richtungstext": "Gievenbeck Dieckmannstr.",
+        "starthst": "43010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 15,
+        "linientext": "11",
+        "fahrzeugid": "5475",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100076_7_11_431",
+        "abfahrtstart": "1784278680",
+        "visfahrplanlagezst": 1784280055,
+        "ankunftziel": "1784282220",
+        "zielhst": "46705"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6361508,
+          51.9592944
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "9",
+        "richtungsid": "1",
+        "akthst": "43931",
+        "delay": 124,
+        "nachhst": "43921",
+        "richtungstext": "Von-Humboldt-Straße",
+        "starthst": "43950",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "9",
+        "fahrzeugid": "5589",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100220_7_9_494",
+        "abfahrtstart": "1784279640",
+        "visfahrplanlagezst": 1784280045,
+        "ankunftziel": "1784283540",
+        "zielhst": "45851"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6741433,
+          51.9062153
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "15",
+        "richtungsid": "2",
+        "akthst": "45481",
+        "delay": 108,
+        "nachhst": "41250",
+        "richtungstext": "Albachten Bahnhof",
+        "starthst": "45310",
+        "betriebstag": "2026-07-17",
+        "sequenz": 13,
+        "linientext": "15",
+        "fahrzeugid": "5477",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100052_6_15_434",
+        "abfahrtstart": "1784279040",
+        "visfahrplanlagezst": 1784280049,
+        "ankunftziel": "1784283120",
+        "zielhst": "46350"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.61211,
+          51.9768664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "110",
+        "richtungsid": "1",
+        "akthst": "42281",
+        "delay": 426,
+        "nachhst": "4227101",
+        "richtungstext": "Handorf Hornheide",
+        "starthst": "43118",
+        "betriebstag": "2026-07-17",
+        "sequenz": 18,
+        "linientext": "E10",
+        "fahrzeugid": "1158",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100092_2_110_115",
+        "abfahrtstart": "1784287200",
+        "visfahrplanlagezst": 1784280061,
+        "ankunftziel": "1784289060",
+        "zielhst": "42240"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.7143886,
+          51.9988469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "linienid": "11",
+        "richtungsid": "1",
+        "akthst": "43041",
+        "delay": -3,
+        "nachhst": "43051",
+        "richtungstext": "Gievenbeck Dieckmannstr.",
+        "starthst": "43010",
+        "betriebstag": "2026-07-17",
+        "sequenz": 4,
+        "linientext": "11",
+        "fahrzeugid": "2445",
+        "fahrtstatus": "Ist",
+        "fahrtbezeichner": "170726_100059_6_11_42",
+        "abfahrtstart": "1784279880",
+        "visfahrplanlagezst": 1784280057,
+        "ankunftziel": "1784283420",
+        "zielhst": "46705"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.6759494,
+          51.9592892
+        ]
+      }
+    }
+  ]
+}

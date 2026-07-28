@@ -1,0 +1,38 @@
+[
+  {
+    "delay": 72,
+    "sequenz": 16,
+    "fahrtbezeichner": "180726_100168_4_11_36",
+    "abfahrtszeit": 1784355300,
+    "einsteigeverbot": "false",
+    "ankunftszeit": 1784355300,
+    "haltid": "4100006",
+    "lbez": "Hauptbahnhof C1",
+    "kbez": "HBF_C1",
+    "fahrzeugid": "2178",
+    "prognosemoeglich": "true",
+    "linientext": "11",
+    "besetztgrad": "Schwach besetzt",
+    "richtungstext": "Gievenbeck Dieckmannstr.",
+    "tatsaechliche_abfahrtszeit": 1784355372,
+    "tatsaechliche_ankunftszeit": 1784355372
+  },
+  {
+    "ankunftszeit": 1784355600,
+    "abfahrtszeit": 1784355600,
+    "fahrtbezeichner": "180726_100135_2_2_548",
+    "einsteigeverbot": "false",
+    "delay": 0,
+    "sequenz": 7,
+    "haltid": "4100006",
+    "lbez": "Hauptbahnhof C1",
+    "kbez": "HBF_C1",
+    "fahrzeugid": "6344",
+    "prognosemoeglich": "true",
+    "linientext": "2",
+    "besetztgrad": "Schwach besetzt",
+    "richtungstext": "Alte Sternwarte",
+    "tatsaechliche_abfahrtszeit": 1784355600,
+    "tatsaechliche_ankunftszeit": 1784355600
+  }
+]

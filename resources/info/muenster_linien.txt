@@ -1,0 +1,108 @@
+1: Roxel - Hiltrup - Amelsbüren
+2: Mauritz Mitte / Handorf Kaserne - Alte Sternwarte
+4: Gelmer / Waldfriedhof Lauheide - Clemenshospital
+5: Nienberge - Gievenbeck - Berg Fidel - Hiltrup
+6: Coerde - Gremmendorf - Angelmodde Waldsiedlung - Hiltrup
+7: Münster - Ottmarsbocholt
+7: Alexianer-Werkstätten - Münster (Westf) Hbf
+8: Coerde - Gremmendorf - Angelmodde Dorf - Wolbeck
+9: Kinderhaus / Sprakel - Hiltrup-Ost
+10: Handorf - Mauritz Mitte - Mecklenbeck
+11: Gievenbeck - Tannenhof
+12: Gievenbeck - Münster (Westf) Hbf
+12: (R23 Warendorf - R22 Everswinkel - Wolbeck - ) Münster Hbf - Gievenbeck
+13: Technologiepark - Münster (Westf) Hbf
+14: Zoo / LWL Naturkundemuseum - Maikottenweg
+15: Kinderhaus - Mecklenbeck - Albachten
+16: Kinderhaus - Mecklenbeck
+17: Kinderhaus - Zentrum Nord - Krögerweg
+18: Alexianer-Werkstätten - Amelsbüren - Hiltrup - Wolbeck
+19: Sprakel - Kinderhaus - Coerde - Waldfriedhof Lauheide
+20: Mecklenbeck - Roxel - Albachten
+22: Münster, Hauptbahnhof - Gievenbeck, Rüschhausweg
+33: Hafenstraße - Polizeipräsidium - Hafenstraße
+34: Hafenstraße - Polizeipräsidium - Hafenstraße
+68: Gremmendorfer Weg - Angelmodde Waldsiedlung
+161: Greven - Gelmer - Saerbeck
+177: Kirche - Bustreff Gesamtschule - Hagebuttenweg - Rönnenthal - Ortsmitte - Nienberge Friedhof - Hauptbahnhof
+256: Greven - Gimbte - Aldrup und zurück
+320: Everswinkel - Alverskirchen - Wolbeck
+330: Sendenhorst - West/Alst - Albersloh - Wolbeck
+341: Herbern - Münster
+391: Brüder-Grimm-Schule - Schulzentrum - Handorf Kaserne
+399: Telgte - Münster
+540: Albachten - Senden
+552: Hauptbahnhof - Brulandstr. - Clemensstr. - Post - Schulzentrum - Bahnhof
+564: Ortsmitte - Frede - Dionysiusstraße - Schulten Kamp - Bahnhof - Egbert - Roxel Hallenbad - Hauptbahnhof
+569: Häger Bahnhof - Baumberge Sporthalle
+570: Henriette-Son-Straße - Baumberge Sporthalle
+571: Am Mühlenbach - Baumberge Sporthalle
+D60: Münster - Autobahn - Nottuln
+E1: Verstärkerfahrt
+E10: Verstärkerfahrt
+E11: Verstärkerfahrt
+E12: Verstärkerfahrt
+E14
+E15: Verstärkerfahrt
+E17: Verstärkerfahrt
+E4: Verstärkerfahrt
+E5: Verstärkerfahrt
+E6: Münster (Westf) Hbf - Friedenspark
+E8: Verstärkerfahrt
+E80: Verstärkerfahrt
+E85: Verstärkerfahrt
+E9: Verstärkerfahrt
+E98: Sporthalle Nienberge - Roxel Hallenbad
+F1: Münster - Sendenhorst - Ennigerloh - Beckum
+Hä+G: Roxel Hallenbad - Blomenkamp
+N1: Ahlen - Sendenhorst - Münster
+N2: Ostbevern - Telgte - Münster
+N3: Beckum - Ennigerloh - Freckenhorst - Everswinkel - Münster
+N4: Münster - Senden - Ottmarsbocholt - Lüdinghausen
+N42: Münster - Drensteinfurt - Mersch
+N5: Burgsteinfurt - Altenberge - Münster
+N6: Coesfeld - Legden - Schöppingen - Horstmar - Laer - Münster
+N7: Münster - Billerbeck - Rosendahl - Gescher - Stadtlohn
+N8: Münster - Nottuln - Coesfeld - Holtwick - Legden
+N80: Roxel - Gievenbeck - Münster (Westf) Hbf
+N81: Kinderhaus Brüningheide - Hiltrup-Ost
+N82: Rudolf-Diesel-Straße - Coerde - Amelsbüren
+N83: Handorf - Mecklenbeck
+N84: Tannenhof - Mecklenbeck - Albachten
+N85: Nienberge - Gievenbeck - Gremmendorf - Angelmodde - Wolbeck
+N9: Münster - Greven - Saerbeck - Ibbenbüren
+R11: Warendorf - Telgte - Münster
+R13: Glandorf - Ostbevern - Telgte - Münster
+R22: (R23 Warendorf -) Everswinkel - Wolbeck - Münster
+R32: (R33 Ennigerloh -) Sendenhorst - Wolbeck - Münster
+R41: Münster - Ottmarsbocholt
+R51: Lengerich - FMO - Münster
+R63: Rhodeplatz - Roxel Mitte - Hauptbahnhof
+R64: Hauptbahnhof - Ortsmitte - Bahnhof
+R72: Altenberge - Nienberge - Münster
+R73: Bahnhof - Bustreff Gesamtschule - Münsterstr. - Hauptbahnhof
+S20: Warendorf - Freckenhorst - Everswinkel - Münster
+S30: Beckum - Neubeckum - Vorhelm - Sendenhorst - Münster
+S50: Münster - FMO - Saerbeck - Ibbenbüren
+S60: Münster - Autobahn - Nottuln
+S70: Vreden - Ahaus - Schöppingen - Horstmar -  Laer - Münster
+S71: (S70 Vreden - ) Schöppingen - Horstmar -  Laer - Münster
+S75: Bocholt - Borken - Münster
+S90: Münster - Autobahn - Senden - Lüdinghausen
+T15: Haus Ruhr - Albachten Sendener Stiege
+T18: Alexianer-Werkstätten - Amelsbüren - Hiltrup - Wolbeck
+T20: Mecklenbeck - Roxel - Albachten
+T5: Haus Heidhorn - Hiltrup Glasuritstraße
+T541: Alexianer KH - Ottmarsbocholt
+T64: Burg Hülshoff - Roxel Bahnhof
+T7A: Werneweg - Alexianer Campus
+T8: Delstrup - Zeisigweg - Gremmendorf Ehrenmal
+T80: Zoo / LWL Naturkundemuseum - Sentruper Höhe - Jungeblodtplatz
+T81: Sprakel - Kinderhaus Schulzentrum
+T82: Kinderhaus - Coerde
+T83: Gelmer - Sudmühle - Schifffahrter Damm
+T84: Maikottenweg - Sophienstraße
+T85: Hiltrup Marktallee - Theodor-Heuss-Straße
+T87: Gelmer - Sudmühle - Rudolf-Diesel-Straße
+T9: Hiltrup Ringstraße - Lärchenweg
+X90: Münster - Senden - Lüdinghausen - Olfen
