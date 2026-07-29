@@ -106,8 +106,8 @@ struct ContentView: View {
                                         .stroke(item.color, lineWidth: 5)
                                         .mapOverlayLevel(level: .aboveRoads)
                                     Annotation("", coordinate: item.coords.first!) {
-                                        ZStack {
-                                            Image("ConstructionSite")
+                                        ZStack {                                            
+                                            Image(self.model.selectedConstructionItem.id == item.id ? "ConstructionSiteSelected" : "ConstructionSite")
                                                 .resizable()
                                                 .frame(width: 22, height: 22)
                                                 .onTapGesture {
@@ -163,7 +163,7 @@ struct ContentView: View {
                                     }
                                 } else {
                                     ForEach(self.model.stopsOfSelectedLine) { stop in
-                                        let isSelectedStop = stop.id == self.model.selectedStop.id
+                                        let isSelectedStop : Bool = stop.id == self.model.selectedStop.id
                                         Annotation("", coordinate: stop.coordinate) {
                                             ZStack(alignment: .top) {
                                                 if isSelectedStop {
@@ -209,7 +209,7 @@ struct ContentView: View {
                                 if self.model.showFavoriteLines ? (self.model.favoriteLines.isEmpty ? Constants.ALL_LINES.contains(bus.line) : self.model.favoriteLines.contains(bus.line)) : Constants.ALL_LINES.contains(bus.line) {
                                     Annotation("", coordinate: bus.coordinate) {
                                         ZStack(alignment: .top) {
-                                            let isSelectedBus = bus.id == self.model.selectedBus.id
+                                            let isSelectedBus : Bool = bus.id == self.model.selectedBus.id
                                             Image(systemName: "circle.fill")
                                                 .resizable()
                                                 .frame(width: 26, height: 26)
