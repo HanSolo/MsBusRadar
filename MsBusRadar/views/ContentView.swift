@@ -676,7 +676,10 @@ struct ContentView: View {
             self.model.checkIfLocationIsEnabled()
         }
         .task {
-            self.position = .region(MKCoordinateRegion(center: self.model.getUserLocation() ?? Constants.MAP_CENTER, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
+            let currentLocation : CLLocationCoordinate2D = self.model.getUserLocation() ?? Constants.MAP_CENTER
+            let isWithinRegion  : Bool                   = self.region.contains(coordinate: currentLocation)
+            self.position = .region(MKCoordinateRegion(center: isWithinRegion ? currentLocation : Constants.MAP_CENTER, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
+            //self.position = .region(MKCoordinateRegion(center: self.model.getUserLocation() ?? Constants.MAP_CENTER, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
             if self.model.networkMonitor.isConnected {
                 self.model.stops.removeAll()
                 self.model.stops += await RestController.getStops()
