@@ -75,6 +75,7 @@ public struct Constants {
     public static let INFO_FONT                  : Font                   = Font.system(size: 14, weight: .light,   design: .rounded)
     public static let STOP_FONT                  : Font                   = Font.system(size: 18, weight: .medium, design: .rounded)
     public static let LINE_NR_FONT               : Font                   = Font.system(size: 14, weight: .medium, design: .rounded)
+    public static let LINE_ID_FONT               : Font                   = Font.system(size: 14, weight: .light, design: .rounded)
     public static let LINE_TIME_FONT             : Font                   = Font.system(size: 14, weight: .regular, design: .rounded)
     public static let LINE_PEOPLE_FONT           : Font                   = Font.system(size: 14, weight: .regular, design: .rounded)
     public static let TITLE_FONT                 : Font                   = Font.system(size: 22, weight: .medium,  design: .rounded)

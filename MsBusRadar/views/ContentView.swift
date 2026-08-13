@@ -558,13 +558,15 @@ struct ContentView: View {
                                     Text("Linie \(bus.line)")
                                         .font(Constants.LINE_NR_FONT)
                                         .foregroundStyle(.white)
+                                    Text("(ID \(bus.id))")
+                                        .font(Constants.LINE_ID_FONT)
+                                        .foregroundStyle(.white)
+                                    Spacer()
                                     if self.model.selectedBusLastUpdate != "" {
-                                        Text(" (\(self.model.selectedBusLastUpdate))")
+                                        Text("\(self.model.selectedBusLastUpdate)")
                                             .font(Constants.BUS_INFO_FONT)
                                             .foregroundStyle(.white)
                                     }
-                                    
-                                    Spacer()
                                 }
                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 3, trailing: 0))
                                 
