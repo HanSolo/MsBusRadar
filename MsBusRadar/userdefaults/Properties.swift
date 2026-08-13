@@ -16,8 +16,12 @@ extension Key {
     static let showFavoriteLines     : Key = "showFavoriteLines"
     static let favoriteStops         : Key = "favoriteStops"
     static let showFavoriteStops     : Key = "showFavoriteStops"
+    static let showParkAndRides      : Key = "showParkAndRides"
     static let showParkingGarages    : Key = "showParkingGarages"
     static let showConstructionSites : Key = "showConstructionSites"
+    static let showFuelStations      : Key = "showFuelStations"
+    static let showChargingStations  : Key = "showChargingStations"
+    static let lastFuelPriceUpdate   : Key = "lastFuelPriceUpdate"
 }
 
 
@@ -42,11 +46,23 @@ public struct Properties {
     @UserDefault(key: .showFavoriteStops, defaultValue: false)
     var showFavoriteStops: Bool?
     
+    @UserDefault(key: .showParkAndRides, defaultValue: false)
+    var showParkAndRides: Bool?
+    
     @UserDefault(key: .showParkingGarages, defaultValue: false)
     var showParkingGarages: Bool?
     
     @UserDefault(key: .showConstructionSites, defaultValue: false)
     var showConstructionSites: Bool?
+        
+    @UserDefault(key: .showFuelStations, defaultValue: false)
+    var showFuelStations: Bool?
+    
+    @UserDefault(key: .showChargingStations, defaultValue: false)
+    var showChargingStations: Bool?
+    
+    @UserDefault(key: .lastFuelPriceUpdate, defaultValue: Calendar.current.date(byAdding: .second, value: -65, to: Date.now)!)
+    var lastFuelPriceUpdate: Date?
     
     private init() {}
 }

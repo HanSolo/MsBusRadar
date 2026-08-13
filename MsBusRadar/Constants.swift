@@ -19,6 +19,9 @@ public struct Constants {
     public static let STOP_API_URL               : String                 = "https://rest.busradar.conterra.de/prod/haltestellen" // 4100006/abfahrten?sekunden=1200
     
     public static let PLS_URL                    : String                 = "https://www.stadt-muenster.de/ms/tiefbauamt/pls/PLS-INet.xml"
+    public static let FUEL_PRICE_URL             : String                 = "https://infranode.dev/api/v1/cities/muenster/fuel-prices"
+    public static let CHARGING_STATIONS_URL      : String                 = "https://infranode.dev/api/v1/cities/muenster/charging"
+    public static let FUEL_STATIONS_URL          : String                 = "https://creativecommons.tankerkoenig.de/json/list.php?lat=51.9503314&lng=7.6320715&rad=20&sort=dist&type=all&apikey=d592b089-d4bc-411b-a195-511347a45fd8"
     
     public static let HBF_STATION_URL            : String                 = "https://dbf.finalrewind.org/M%C3%BCnster(Westf)Hbf?detailed=1"
     public static let NORTH_STATION_URL          : String                 = "https://dbf.finalrewind.org/M%C3%BCnster(W)Zentrum%20Nord?detailed=1"
@@ -65,6 +68,7 @@ public struct Constants {
     public static let PARK_BLUE                  : Color                  = Color(red: 0.02, green: 0.44, blue: 0.72, opacity: 1.00)
     public static let PARK_GREEN                 : Color                  = Color(red: 0.08, green: 0.96, blue: 0.11, opacity: 1.00)
     public static let DELAY_RED                  : Color                  = Color(red: 0.71, green: 0.00, blue: 0.00, opacity: 1.00)
+    public static let EV_GREEN                   : Color                  = Color(red: 0.00, green: 0.60, blue: 0.00, opacity: 1.00)
         
     public static let BUS_FONT                   : Font                   = Font.system(size: 12, weight: .regular, design: .rounded)
     public static let BUS_INFO_FONT              : Font                   = Font.system(size: 12, weight: .regular,  design: .rounded)
@@ -73,15 +77,18 @@ public struct Constants {
     public static let LINE_NR_FONT               : Font                   = Font.system(size: 14, weight: .medium, design: .rounded)
     public static let LINE_TIME_FONT             : Font                   = Font.system(size: 14, weight: .regular, design: .rounded)
     public static let LINE_PEOPLE_FONT           : Font                   = Font.system(size: 14, weight: .regular, design: .rounded)
-    public static let TITLE_FONT                 : Font                   = Font.system(size: 18, weight: .medium,  design: .rounded)
+    public static let TITLE_FONT                 : Font                   = Font.system(size: 22, weight: .medium,  design: .rounded)
     public static let STD_FONT                   : Font                   = Font.system(size: 14, weight: .regular,  design: .rounded)
     public static let TOOLBAR_FONT               : Font                   = Font.system(size: 10, weight: .light, design: .rounded)
     
     public static let DEFAULT_STOP               : Stop                   = Stop(globalId: "none", name: "", nr: "", direction: "", coordinate: MAP_CENTER)
     public static let DEFAULT_BUS                : Bus                    = Bus(busId: "none", line: "", timestamp: -1, currentStopId: "", nextStopId: "", direction: "", delay: -1, directionId: "", coordinate: MAP_CENTER)
+    public static let DEFAULT_PARK_AND_RIDE      : ParkAndRide            = ParkAndRide(name: "none", slots: 0, cost: "", openHours: "", coordinate: MAP_CENTER)
     public static let DEFAULT_PARKING_GARAGE     : ParkingGarage          = ParkingGarage(name: "none", totalSpaces: 0, freeSpaces: 0, state: .keineAngabe, timestamp: Date.now)
     public static let DEFAULT_STATION            : Station                = Station()
     public static let DEFAULT_CONSTRUCTION_ITEM  : PolylineItem           = PolylineItem(name: "none", type: "", start: Date(), end: Date(), coords: [], color: .clear)
+    public static let DEFAULT_FUEL_STATION       : FuelStation            = FuelStation(id: UUID().uuidString, brand: "none", coordinate: MAP_CENTER)
+    public static let DEFAULT_CHARGING_STATION   : ChargingStation        = ChargingStation(id: UUID().uuidString, name: "none", powerKw: 0, state: "", type: "", points: 0, connectors: [], coordinate: MAP_CENTER)
     
     public static let STATIONS                   : [String:String]        = [
         "Münster Hbf"  : HBF_STATION_URL,
@@ -96,6 +103,25 @@ public struct Constants {
     
     public static let ALL_LINES                  : [String]               = [
         "1","2","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","22","33","34","68","161","177","256","320","330","341","391","399","540","552","564","569","570","571","D60","E1","E10","E11","E12","E14","E15","E17","E4","E5","E6","E8","E80","E85","E9","E98","F1","Hä+G","N1","N2","N3","N4","N42","N5","N6","N7","N8","N80","N81","N82","N83","N84","N85","N9","R11","R13","R22","R32","R41","R51","R63","R64","R72","R73","S20","S30","S50","S60","S70","S71","S75","S90","T15","T18","T20","T5","T541","T64","T7A","T8","T80","T81","T82","T83","T84","T85","T87","T9","X90"
+    ]
+    
+    public static let PARK_AND_RIDES             : [ParkAndRide]          = [
+        ParkAndRide(name: "Amelsbüren Bahnhof", slots: 28, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.8847, longitude: 7.59991)),
+        ParkAndRide(name: "Grevener Straße", slots: 28, cost: "kostenload", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 52.003, longitude: 7.61559)),
+        ParkAndRide(name: "Zentrum Nord", slots: 35, cost: "kostenlos", openHours: "töglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9843, longitude: 7.63707)),
+        ParkAndRide(name: "Hauptbahnof", slots: 339, cost: "kostenpflichtig", openHours: "Mo - So 6:00 - 24:00 Uhr", coordinate: CLLocationCoordinate2D(latitude: 51.9564, longitude: 7.63576)),
+        ParkAndRide(name: "Hiltrup Bahnhof", slots: 74, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9047, longitude: 7.65424)),
+        ParkAndRide(name: "Kappenberger Damm", slots: 56, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.89, longitude: 7.5769)),
+        ParkAndRide(name: "Nienberge Häger Bahnhof", slots: 14, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 52.022, longitude: 7.56216)),
+        ParkAndRide(name: "Preußenstadion", slots: 270, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9321, longitude: 7.62587)),
+        ParkAndRide(name: "Roxel Bahnhof", slots: 33, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9461, longitude: 7.52766)),
+        ParkAndRide(name: "Weseler Straße", slots: 175, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9364, longitude: 7.60248)),
+        ParkAndRide(name: "Wilkinghege", slots: 50, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9837, longitude: 7.58843)),
+        ParkAndRide(name: "Nieberdingerstraße", slots: 172, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9446, longitude: 7.64549)),
+        ParkAndRide(name: "Albachten Bahnhof", slots: 21, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.9153, longitude: 7.52723)),
+        ParkAndRide(name: "Sprakel Bahnhof", slots: 16, cost: "kostenlos", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 52.0417, longitude: 7.61839)),
+        ParkAndRide(name: "Hauptbahnhof", slots: 416, cost: "kostenpflichtig", openHours: "täglich durchgehend", coordinate: CLLocationCoordinate2D(latitude: 51.957899, longitude: 7.637888)),
+        ParkAndRide(name: "Coesfelder Kreuz", slots: 1000, cost: "kostenpflichtig", openHours: "Sa 8:00 - 23:00 Uhr", coordinate: CLLocationCoordinate2D(latitude: 51.965865, longitude: 7.601047))
     ]
     
     public static let PARKING_GARAGE_LOCATIONS   : [String: CLLocationCoordinate2D] = [

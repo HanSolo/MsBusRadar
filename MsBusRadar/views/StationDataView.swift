@@ -65,21 +65,23 @@ struct StationDataView: View {
                 List(self.departures, id: \.self) { departure in
                     HStack(alignment: .center, spacing: 10) {
                         VStack(alignment: .leading) {
-                            Text("\(departure.train ?? departure.trainNumber ?? "")")
-                                .font(.system(size: 14, weight: .regular, design: .rounded))
-                                .foregroundColor(.white)
-                                .padding(EdgeInsets(top: 2, leading: 3, bottom: 2, trailing: 3)) // Add padding around the text
-                                .background(Material.regular, in: RoundedRectangle(cornerRadius: 5))
-                                .background(departure.train!.starts(with: "IC") ? .red : .clear)
-                                .overlay(RoundedRectangle(cornerRadius: 5)
-                                    .stroke(departure.train!.starts(with: "IC") ? .red : .gray, lineWidth: 1))
-                                .clipShape(RoundedRectangle(cornerRadius: 5))
+                            HStack {
+                                Text("\(departure.train ?? departure.trainNumber ?? "")")
+                                    .font(.system(size: 14, weight: .regular, design: .rounded))
+                                    .padding(EdgeInsets(top: 2, leading: 3, bottom: 2, trailing: 3)) // Add padding around the text
+                                    .background(Material.regular, in: RoundedRectangle(cornerRadius: 5))
+                                    .background(departure.train!.starts(with: "IC") ? .red : .clear)
+                                    .overlay(RoundedRectangle(cornerRadius: 5)
+                                        .stroke(departure.train!.starts(with: "IC") ? .red : .gray, lineWidth: 1))
+                                    .clipShape(RoundedRectangle(cornerRadius: 5))
+                                Spacer()
+                            }
                             
                             Text("Gleis \(departure.platform ?? "")")
                                 .font(.system(size: 12, weight: .regular, design: .rounded))
                                 .foregroundStyle(.white)
                         }
-                        .frame(width: 80)
+                        .frame(width: 84)
                         if departure.scheduledDeparture == nil {
                             // Arrival
                             VStack {

@@ -30,50 +30,67 @@ struct ContentView: View {
                     Constants.BLUE.edgesIgnoringSafeArea(.all)
                     
                     VStack(alignment: .center) {
-                        Text("Münster Bus Radar")
-                            .foregroundStyle(.white)
-                            .font(Constants.TITLE_FONT)
+                        HStack {
+                            Text("Münster Bus Radar")
+                                .foregroundStyle(.white)
+                                .font(Constants.TITLE_FONT)                                
+                                      
+                            Spacer()
+                            
+                            Button {
+                                self.position = .region(MKCoordinateRegion(center: self.model.locationManager?.location?.coordinate ?? Constants.MAP_CENTER, span: self.model.currentMapSpan))
+                            } label: {
+                                Image(systemName: "scope")
+                                    .font(Constants.INFO_FONT)
+                                    .foregroundStyle(colorScheme == .dark ? .white : Constants.DARK_BLUE)
+                                    .frame(width: 22, height: 22)
+                            }
+                            .buttonStyle(.glass)
+                        }
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                         
                         HStack {
                             Button {
-                                self.model.selectedStop             = Constants.DEFAULT_STOP
-                                self.model.selectedBus              = Constants.DEFAULT_BUS
-                                self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
-                                self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
-                                self.model.stopsOfSelectedLine.removeAll()
+                                self.model.deselectAll()
                             } label: {
-                                Text("Selektion aufheben")
+                                Text("Clear")
                                     .font(Constants.INFO_FONT)
                                     .foregroundStyle(colorScheme == .dark ? .white : Constants.DARK_BLUE)
                                     .frame(height: 22)
                             }
                             .buttonStyle(.glass)
-                                                                                    
-                            Spacer()
-                                    
+                            .frame(maxWidth: .infinity)
+                            
                             Button {
-                                self.model.showParkingGarages.toggle()
+                                self.model.showParkAndRides.toggle()
                             } label: {
-                                ZStack(alignment: .top) {
-                                    if self.model.showParkingGarages {
-                                        Color.white
-                                            .frame(width: 20, height: 20)
-                                            .cornerRadius(10)
-                                    } else {
-                                        Color.black
-                                            .frame(width: 22, height: 22)
-                                            .cornerRadius(10)
-                                    }
-                                    Image(systemName: "parkingsign.square.fill")
+                                ZStack {
+                                    Image(systemName: "square.fill")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .shadow(color: .clear, radius: 0, x: 0, y: 0)
-                                        .foregroundStyle(self.model.showParkingGarages ? Constants.PARK_BLUE : Color.white)
+                                        .foregroundStyle(self.model.showParkAndRides ? Constants.PARK_BLUE : Color.gray)
+                                    Text("P+R")
+                                        .font(.system(size: 8, weight: .bold, design: .rounded))
+                                        .fontWidth(.condensed)
+                                        .foregroundStyle(.white)
                                 }
                             }
                             .buttonStyle(.glass)
-                            
-                            Spacer()
+                            .frame(maxWidth: .infinity)
+                                                                                    
+                            Button {
+                                self.model.showParkingGarages.toggle()
+                            } label: {
+                                Image(systemName: "parkingsign.square.fill")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                    .symbolRenderingMode(.palette)
+                                    .foregroundStyle(Color.white, self.model.showParkingGarages ? Constants.PARK_BLUE : Color.gray)
+                            }
+                            .buttonStyle(.glass)
+                            .frame(maxWidth: .infinity)
                             
                             Button {
                                 self.model.showConstructionSites.toggle()
@@ -83,20 +100,29 @@ struct ContentView: View {
                                     .frame(width: 22, height: 22)
                             }
                             .buttonStyle(.glass)
-                            
-                            Spacer()
+                            .frame(maxWidth: .infinity)
                             
                             Button {
-                                self.position = .region(MKCoordinateRegion(center: self.model.locationManager?.location?.coordinate ?? Constants.MAP_CENTER, span: self.model.currentMapSpan))                                
+                                self.model.showFuelStations.toggle()
                             } label: {
-                                Image(systemName: "scope")
-                                    .font(Constants.INFO_FONT)
-                                    .foregroundStyle(colorScheme == .dark ? .white : Constants.DARK_BLUE)
+                                Image(systemName: self.model.showFuelStations ? "fuelpump.fill" : "fuelpump")
+                                    .foregroundStyle(self.model.showFuelStations ? Color.primary : Color.gray)
                                     .frame(width: 22, height: 22)
                             }
                             .buttonStyle(.glass)
+                            .frame(maxWidth: .infinity)
+                            
+                            Button {
+                                self.model.showChargingStations.toggle()
+                            } label: {
+                                Image(systemName: self.model.showChargingStations ? "ev.charger.fill" : "ev.charger")
+                                    .foregroundStyle(self.model.showChargingStations ? Color.primary : Color.gray)
+                                    .frame(width: 22, height: 22)
+                            }
+                            .buttonStyle(.glass)
+                            .frame(maxWidth: .infinity)
                         }
-                        .padding(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 10))
+                        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                                                 
                         Map(position: self.$position, bounds: self.bounds, interactionModes: [.pan, .zoom]) {
                             // Draw construction sites
@@ -112,7 +138,9 @@ struct ContentView: View {
                                                 .frame(width: 22, height: 22)
                                                 .onTapGesture {
                                                     self.model.selectedBus              = Constants.DEFAULT_BUS
+                                                    self.model.selectedParkAndRide      = Constants.DEFAULT_PARK_AND_RIDE
                                                     self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                                    self.model.selectedFuelStation      = Constants.DEFAULT_FUEL_STATION
                                                     self.model.selectedConstructionItem = item
                                                 }
                                         }
@@ -231,7 +259,9 @@ struct ContentView: View {
                                         }                                                                               
                                         .onTapGesture {
                                             self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
+                                            self.model.selectedParkAndRide      = Constants.DEFAULT_PARK_AND_RIDE
                                             self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                            self.model.selectedFuelStation      = Constants.DEFAULT_FUEL_STATION
                                             self.model.selectedBus              = bus
                                             self.model.stopsOfSelectedLine.removeAll()
                                             self.model.stopsOfSelectedLine += self.model.stops.filter({ $0.lines.contains(self.model.selectedBus.line) })
@@ -242,25 +272,45 @@ struct ContentView: View {
                                 }
                             }
                             
+                            // Draw park and rides
+                            if self.model.showParkAndRides {
+                                ForEach(Constants.PARK_AND_RIDES) { pr in
+                                    Annotation("", coordinate: pr.coordinate) {
+                                        ZStack {
+                                            let isSelectedParkAndRide : Bool = pr == self.model.selectedParkAndRide
+                                            Image(systemName: "square.fill")
+                                                .resizable()
+                                                .frame(width: 20, height: 20)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(isSelectedParkAndRide ? Constants.SELECTION_COLOR : Constants.PARK_BLUE)
+                                            Text("P+R")
+                                                .font(.system(size: 8, weight: .bold, design: .rounded))
+                                                .fontWidth(.condensed)
+                                                .foregroundStyle(.white)
+                                        }
+                                        .onTapGesture {
+                                            self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
+                                            self.model.selectedBus              = Constants.DEFAULT_BUS
+                                            self.model.selectedFuelStation      = Constants.DEFAULT_FUEL_STATION
+                                            self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                            self.model.selectedParkAndRide      = pr
+                                        }
+                                    }
+                                }
+                            }
+                            
                             // Draw parking garages
                             if self.model.showParkingGarages {
                                 ForEach(self.model.parkingGarages) { garage in
                                     Annotation("", coordinate: garage.coordinate) {
                                         ZStack(alignment: .top) {
-                                            if garage == self.model.selectedParkingGarage {
-                                                Constants.SELECTION_COLOR
-                                                    .frame(width: 22, height: 22)
-                                                    .cornerRadius(10)
-                                            } else {
-                                                Color.white
-                                                    .frame(width: 22, height: 22)
-                                                    .cornerRadius(10)
-                                            }
+                                            let isSelectedParkingGarage : Bool = garage == self.model.selectedParkingGarage
                                             Image(systemName: "parkingsign.square.fill")
                                                 .resizable()
-                                                .frame(width: 22, height: 22)
+                                                .frame(width: 20, height: 20)
                                                 .shadow(color: .clear, radius: 0, x: 0, y: 0)
-                                                .foregroundStyle(Constants.PARK_BLUE)
+                                                .symbolRenderingMode(.palette)
+                                                .foregroundStyle(Color.white, isSelectedParkingGarage ? Constants.SELECTION_COLOR : Constants.PARK_BLUE)
                                             Text(garage.name)
                                                 .font(Constants.BUS_FONT)
                                                 .padding(4)
@@ -276,7 +326,71 @@ struct ContentView: View {
                                             }
                                             self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
                                             self.model.selectedBus              = Constants.DEFAULT_BUS
+                                            self.model.selectedFuelStation      = Constants.DEFAULT_FUEL_STATION
+                                            self.model.selectedParkAndRide      = Constants.DEFAULT_PARK_AND_RIDE
                                             self.model.selectedParkingGarage    = garage
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            // Draw available fuel stations
+                            if self.model.showFuelStations {
+                                ForEach(self.model.fuelStations) { fuelStation in
+                                    let isSelectedFuelStation : Bool = fuelStation == self.model.selectedFuelStation
+                                    let isOpen                : Bool = fuelStation.isOpen
+                                    Annotation("", coordinate: fuelStation.coordinate) {
+                                        ZStack {
+                                            Image(systemName: "square.fill")
+                                                .resizable()
+                                                .frame(width: 22, height: 22)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(isSelectedFuelStation ? Constants.SELECTION_COLOR : isOpen ? .brown : .gray)
+                                            Image(systemName: fuelStation.isOpen ? "fuelpump.fill" : "fuelpump")
+                                                .resizable()
+                                                .frame(width: 16, height: 16)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(.white)
+                                        }
+                                        .onTapGesture {                                            
+                                            self.model.selectedConstructionItem = Constants.DEFAULT_CONSTRUCTION_ITEM
+                                            self.model.selectedBus              = Constants.DEFAULT_BUS
+                                            self.model.selectedParkAndRide      = Constants.DEFAULT_PARK_AND_RIDE
+                                            self.model.selectedParkingGarage    = Constants.DEFAULT_PARKING_GARAGE
+                                            self.model.selectedFuelStation      = fuelStation
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            // Draw available charging stations
+                            if self.model.showChargingStations {
+                                ForEach(self.model.chargingStations) { chargingStation in                                    
+                                    let isSelectedChargingStation : Bool = chargingStation == self.model.selectedChargingStation
+                                    let isOpen                    : Bool = chargingStation.state == "In Betrieb"
+                                    
+                                    Annotation("", coordinate: chargingStation.coordinate) {
+                                        ZStack {
+                                            Image(systemName: "square.fill")
+                                                .resizable()
+                                                .frame(width: 22, height: 22)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(isSelectedChargingStation ? Constants.SELECTION_COLOR : isOpen ? Constants.EV_GREEN : .gray)
+                                            Image(systemName: isOpen ? "ev.charger.fill" : "ev.charger")
+                                                .resizable()
+                                                .frame(width: 16, height: 16)
+                                                .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                                .foregroundStyle(.white)
+                                        }
+                                        .onTapGesture {
+                                            Task {
+                                                if self.model.networkMonitor.isConnected {
+                                                    self.model.chargingStations.removeAll()
+                                                    self.model.chargingStations += await RestController.getChargingStations()
+                                                    self.model.showEvStation.toggle()
+                                                    self.model.selectedChargingStation = chargingStation
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -473,6 +587,49 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .background(Constants.DARK_BLUE.opacity(0.5))
                             .clipShape(RoundedRectangle(cornerRadius: 10))
+                        } else if self.model.selectedParkAndRide.name != "none" {
+                            let parkAndRide : ParkAndRide = self.model.selectedParkAndRide
+                            VStack(spacing: 4) {
+                                HStack {
+                                    Spacer()
+                                    
+                                    ZStack {
+                                        Image(systemName: "square.fill")
+                                            .resizable()
+                                            .frame(width: 26, height: 26)
+                                            .shadow(color: .clear, radius: 0, x: 0, y: 0)
+                                            .foregroundStyle(Constants.PARK_BLUE)
+                                        Text("P+R")
+                                            .font(Constants.BUS_INFO_FONT)
+                                            .fontWidth(.compressed)
+                                            .foregroundStyle(.white)
+                                    }
+                                    
+                                    Text("\(parkAndRide.name)")
+                                        .font(Constants.LINE_NR_FONT)
+                                        .foregroundStyle(.white)
+                                    
+                                    Spacer()
+                                }
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                
+                                Text("\(parkAndRide.slots) Plätze")
+                                    .font(Constants.BUS_INFO_FONT)
+                                    .foregroundStyle(.white)
+                                
+                                Text("(\(parkAndRide.cost))")
+                                    .font(Constants.BUS_INFO_FONT)
+                                    .foregroundStyle(.white)
+                                
+                                Text("Öffnungszeiten \(parkAndRide.openHours)")
+                                    .font(Constants.BUS_INFO_FONT)
+                                    .foregroundStyle(.white)
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(EdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4))
+                            .cornerRadius(10)
+                            .background(Constants.DARK_BLUE.opacity(0.5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                         } else if self.model.selectedParkingGarage.name != "none" {
                             let garage : ParkingGarage = self.model.selectedParkingGarage
                             VStack(spacing: 4) {
@@ -551,6 +708,59 @@ struct ContentView: View {
                             .cornerRadius(10)
                             .background(Constants.DARK_BLUE.opacity(0.5))
                             .clipShape(RoundedRectangle(cornerRadius: 10))                            
+                        } else if self.model.selectedFuelStation.brand != "none" {
+                            VStack(spacing: 4) {
+                                HStack {
+                                    Spacer()
+                                    
+                                    Image(systemName: "fuelpump.fill")
+                                        .resizable()
+                                        .frame(width: 24, height: 24)
+                                        .foregroundStyle(.white)
+                                    Text("\(self.model.selectedFuelStation.brand)")
+                                        .font(Constants.LINE_NR_FONT)
+                                        .foregroundStyle(.white)
+                                    
+                                    Spacer()
+                                }
+                                .padding(EdgeInsets(top: 0, leading: 0, bottom: 3, trailing: 0))
+                                             
+                                HStack(spacing: 10) {
+                                    Text("Benzin E5")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                    Spacer()
+                                    Text("\(String(format: "%.3f €", self.model.selectedFuelStation.e5))")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                }
+                                
+                                HStack(spacing: 10) {
+                                    Text("Benzin E10")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                    Spacer()
+                                    Text("\(String(format: "%.3f €", self.model.selectedFuelStation.e10))")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                }
+                                
+                                HStack(spacing: 10) {
+                                    Text("Diesel")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                    Spacer()
+                                    Text("\(String(format: "%.3f €", self.model.selectedFuelStation.diesel))")
+                                        .font(Constants.BUS_INFO_FONT)
+                                        .foregroundStyle(.white)
+                                }
+                                
+                            }
+                            .frame(maxWidth: .infinity)
+                            .padding(EdgeInsets(top: 4, leading: 80, bottom: 4, trailing: 80))
+                            .cornerRadius(10)
+                            .background(Constants.DARK_BLUE.opacity(0.5))
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                         }
                         
                         if !self.model.networkMonitor.isConnected {
@@ -679,7 +889,6 @@ struct ContentView: View {
             let currentLocation : CLLocationCoordinate2D = self.model.getUserLocation() ?? Constants.MAP_CENTER
             let isWithinRegion  : Bool                   = self.region.contains(coordinate: currentLocation)
             self.position = .region(MKCoordinateRegion(center: isWithinRegion ? currentLocation : Constants.MAP_CENTER, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
-            //self.position = .region(MKCoordinateRegion(center: self.model.getUserLocation() ?? Constants.MAP_CENTER, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)))
             if self.model.networkMonitor.isConnected {
                 self.model.stops.removeAll()
                 self.model.stops += await RestController.getStops()
@@ -716,6 +925,18 @@ struct ContentView: View {
                 
                 self.model.constructionSites.removeAll()
                 self.model.constructionSites += await RestController.getConstructionSites()
+                
+                if self.model.showFuelStations {
+                    let lastFuelPriceUpdate: Date = Properties.instance.lastFuelPriceUpdate!
+                    if Date.now.timeIntervalSince(lastFuelPriceUpdate) > 60 {
+                        self.model.fuelStations.removeAll()
+                        self.model.fuelStations += await RestController.getFuelPrices()
+                        Properties.instance.lastFuelPriceUpdate = Date.now
+                    }
+                }
+                
+                self.model.chargingStations.removeAll()
+                self.model.chargingStations += await RestController.getChargingStations()
             }
         }
         .onReceive(timer) {_ in 
@@ -748,6 +969,15 @@ struct ContentView: View {
         }
         .sheet(isPresented: self.model.showStationDataBinding) {
             StationDataView()
+        }
+        .sheet(isPresented: self.model.showEvStationBinding) {
+            if self.model.selectedChargingStation.name != "none" {
+                EvStationInfoView(chargingStation: self.model.selectedChargingStation)
+                    .presentationDetents([.medium])
+                    .onDisappear {
+                        self.model.selectedChargingStation = Constants.DEFAULT_CHARGING_STATION
+                    }
+            }
         }
     }
 }

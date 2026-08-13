@@ -120,6 +120,44 @@ class RestController {
             return station
         }
     }
+ 
+    public static func getFuelPrices() async -> [FuelStation] {
+        let url          : URL           = URL(string: "\(Constants.FUEL_STATIONS_URL)")!
+        var fuelStations : [FuelStation] = []
+        
+        do {
+            let (data, response) = try await session.data(from: url)
+            guard let http = response as? HTTPURLResponse, http.statusCode == 200 else { return [] }
+            let fuelPrices : FuelPrices = try JSONDecoder().decode(FuelPrices.self, from: data)
+            if fuelPrices.stations != nil {
+                fuelPrices.stations?.forEach { station in
+                    fuelStations.append(FuelStation(id: station.id ?? UUID().uuidString, brand: station.brand ?? "Unknown", e5: station.e5 ?? 0.0, e10: station.e10 ?? 0.0, diesel: station.diesel ?? 0.0, isOpen: station.isOpen ?? false , coordinate: CLLocationCoordinate2D(latitude: station.lat ?? 0.0, longitude: station.lng ?? 0.0)))
+                }
+            }
+        } catch {
+            return fuelStations
+        }
+        return fuelStations
+    }
+    
+    public static func getChargingStations() async -> [ChargingStation] {
+        let url: URL = URL(string: "\(Constants.CHARGING_STATIONS_URL)")!
+        var chargingStations : [ChargingStation] = []
+        
+        do {
+            let (data, response) = try await session.data(from: url)
+            guard let http = response as? HTTPURLResponse, http.statusCode == 200 else { return [] }
+            let evstations : EChargingStations = try JSONDecoder().decode(EChargingStations.self, from: data)
+            if evstations.data != nil {
+                evstations.data?.payload?.stations?.forEach { station in
+                    chargingStations.append(ChargingStation(id: station.stationId!, name: station.oprtr ?? "Unknown", powerKw: station.powerKw ?? 0.0, state: station.status ?? "", type: station.chargingType ?? "", points: station.points ?? 0, connectors: station.connectors ?? [], coordinate: CLLocationCoordinate2D(latitude: station.lat ?? 0.0, longitude: station.lon ?? 0.0)))
+                }
+            }
+        } catch {
+            return chargingStations
+        }
+        return chargingStations
+    }
     
     public static func getConstructionSites() async -> [ConstructionSite] {
         let url: URL = URL(string: "\(Constants.CONSTRUCTION_SITE_URL)")!
