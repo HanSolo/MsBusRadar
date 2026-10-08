@@ -795,11 +795,12 @@ struct ContentView: View {
                 .navigationBarHidden(true)
                 .toolbar {
                     ToolbarItemGroup(placement: .bottomBar) {
-                        VStack(alignment: .center) {
+                        let iconColor : Color = colorScheme == .dark ? Color.white : Color.gray
+                        VStack(alignment: .center, spacing: 5) {
                             Text("Haltestellen")
                                 .font(Constants.TOOLBAR_FONT)
                             
-                            HStack {
+                            HStack(spacing: 35) {
                                 Button {
                                     self.model.showStops.toggle()
                                 } label: {
@@ -807,83 +808,97 @@ struct ContentView: View {
                                         if self.model.showStops {
                                             Image(systemName: "h.circle.fill")
                                                 .resizable()
-                                                .frame(width: 24, height: 24)
+                                                .frame(width: 22, height: 22)
                                                 .shadow(color: .clear, radius: 0, x: 0, y: 0)
                                                 .symbolRenderingMode(.palette)
                                                 .foregroundStyle(Constants.STOP_GREEN, Constants.STOP_YELLOW)
                                             Image(systemName: "circle")
                                                 .resizable()
-                                                .frame(width: 24, height: 24)
+                                                .frame(width: 22, height: 22)
                                                 .shadow(color: .clear, radius: 0, x: 0, y: 0)
                                                 .symbolRenderingMode(.palette)
                                                 .foregroundStyle(Constants.STOP_GREEN)
                                         } else {
                                             Image(systemName: "h.circle.fill")
                                                 .resizable()
-                                                .frame(width: 24, height: 24)
+                                                .frame(width: 22, height: 22)
                                                 .shadow(color: .clear, radius: 0, x: 0, y: 0)
                                                 .symbolRenderingMode(.palette)
                                                 .foregroundStyle(.black, .white)
                                             Image(systemName: "circle")
                                                 .resizable()
-                                                .frame(width: 24, height: 24)
+                                                .frame(width: 22, height: 22)
                                                 .shadow(color: .clear, radius: 0, x: 0, y: 0)
                                                 .symbolRenderingMode(.palette)
                                                 .foregroundStyle(.black)
                                         }
                                     }
                                 }
-                                .buttonStyle(.glass)
+                                .buttonStyle(.plain)
                                 
                                 Button {
                                     self.model.showFavoriteStops.toggle()
                                 } label: {
                                     if self.model.showFavoriteStops {
                                         Image(systemName: "star.fill")
+                                            .font(.system(size: 14))
+                                            .foregroundStyle(iconColor)
                                     } else {
                                         Image(systemName: "star")
+                                            .font(.system(size: 14))
+                                            .foregroundStyle(iconColor)
                                     }
                                 }
-                                .buttonStyle(.glass)
+                                .buttonStyle(.plain)
                                 .disabled(!self.model.showStops)
                             }
+                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
                         }
+                        .padding(EdgeInsets(top: 8, leading: 10, bottom: 8, trailing: 0))
                         
                         Divider()
                             .frame(width: 2, height: 32)
-                            .overlay(.white)
+                            .overlay(iconColor)
                         
-                        VStack(alignment: .center) {
+                        VStack(alignment: .center, spacing: 5) {
                             Text("Buslinien")
                                 .font(Constants.TOOLBAR_FONT)
                             
-                            HStack {
+                            HStack(spacing: 35) {
                                 Button {
                                     self.showLineSelection.toggle()
                                 } label: {
                                     Image(systemName: "bus")
-                                        .frame(width: 20, height: 20)
+                                        .font(.system(size: 12))
+                                        .foregroundStyle(iconColor)
                                 }
-                                .buttonStyle(.glass)
+                                .buttonStyle(.plain)
                                 
                                 Button {
                                     self.model.showFavoriteLines.toggle()
                                 } label: {
                                     if self.model.showFavoriteLines {
                                         Image(systemName: "star.fill")
+                                            .font(.system(size: 14))
+                                            .foregroundStyle(iconColor)
                                     } else {
                                         Image(systemName: "star")
+                                            .font(.system(size: 14))
+                                            .foregroundStyle(iconColor)
                                     }
                                 }
-                                .buttonStyle(.glass)
+                                .buttonStyle(.plain)
                             }
+                            .padding(EdgeInsets(top: 0, leading: 0, bottom: 10, trailing: 0))
                         }
+                        .padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 10))
                     }
                 }
             }
-            .edgesIgnoringSafeArea(.all)
-            .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            //.edgesIgnoringSafeArea(.all)
+            //.padding(EdgeInsets(top: 0, leading: 0, bottom: 5, trailing: 0))
         }
+        //.edgesIgnoringSafeArea(.all)
         .onAppear {
             self.model.checkIfLocationIsEnabled()
         }
